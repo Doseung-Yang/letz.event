@@ -14,14 +14,22 @@ export const headerNav = [
     }
 ];
 
-export const introText = {
-    title: "",
-  
-}
+export const introText = [
+    {
+        title: "coming-soon",
+    },
+    {
+        subtitle: "사전 오픈 알림 신청",
+    },
+    {
+        subbtitle: "사전 오픈 알림 신청하고 \n오픈 프로모션 혜택 받으세요"
+    }
+
+]
 
 export const skillText = [
     {
-        title: "",
+        title: "테스트",
        
     },
     {

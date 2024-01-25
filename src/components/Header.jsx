@@ -37,12 +37,14 @@ const Header = () => {
         <header id="header" role="banner">
             <div className="header__inner">
                 <div className="letz_logo">
+                    <a href="/">
                     <Image
                         src={LetzLogo}
                         alt="Letz Logo" 
                         width={66} 
                         height={20}
                     />
+                    </a>
                 </div>
                 
                 <nav 
@@ -76,6 +78,7 @@ const Header = () => {
                     <span></span>
                 </div>
             </div>
+            
         </header>
     )
 }

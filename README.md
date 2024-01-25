@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Letz service event page.
 
 
@@ -11,6 +10,3 @@ Letz service event page.
 `npm install sass`
 `npm install gsap`
 `npm install @studio-freight/lenis`
-=======
-# letz.event
->>>>>>> 29e35f6f8b404f64b022e999d26fb27cbb726483
