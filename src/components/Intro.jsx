@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { introText } from "@/constants";
+import RegisterForm from "@/components/RegisterForm";
 
 const Intro = () => {
     return (
@@ -14,8 +15,8 @@ const Intro = () => {
                             <h1>{intro.subtitle}</h1>
                              <p style={{ whiteSpace: 'pre-line' }}>{intro.subbtitle}</p>
                         </div>
-
                         ))}
+                        <RegisterForm />
                 </div>
             </div>
         </section>
