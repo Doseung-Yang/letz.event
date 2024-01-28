@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 import { toast } from 'react-hot-toast';
+import '../assets/scss/section/_RegisterForm.scss';
 
 const RegisterForm = () => {
     const [name, setName] = useState("");
     const [contact, setContact] = useState("");
     const [nameError, setNameError] = useState("");
     const [contactError, setContactError] = useState("");
+    const [isChecked, setIsChecked] = useState(false);
 
-    // 이름에 특수 문자를 입력하지 못하게 하는 함수
     const validateName = (input) => {
-        const regex = /^[가-힣a-zA-Z]*$/; // 한글과 영어만 허용
+        const regex = /^[가-힣a-zA-Z]*$/; 
         return regex.test(input);
     };
 
-    // 연락처에 특수 문자나 영어를 입력하지 못하게 하는 함수
     const validateContact = (input) => {
-        const regex = /^[0-9]*$/; // 숫자만 허용
+        const regex = /^[0-9]*$/; 
         return regex.test(input);
     };
 
@@ -41,6 +41,21 @@ const RegisterForm = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        if (!isChecked) {
+            toast.error('체크박스를 체크해주세요.');
+            return;
+        }
+
+        if (name === '') {
+            toast.error('이름을 입력해주세요.');
+            return;
+        }
+
+        if (contact === '') {
+            toast.error('연락처를 입력해주세요.');
+            return;
+        }
 
         if (nameError || contactError) {
             toast.error('입력한 정보를 확인해주세요.');
@@ -68,26 +83,51 @@ const RegisterForm = () => {
 
         setName("");
         setContact("");
+        setIsChecked(false);
         toast.success('성공적으로 사전예약에 등록되었습니다!');
     };
 
     return (
         <form onSubmit={handleSubmit}>
-            <input
-                type="text"
-                value={name}
-                onChange={handleNameChange}
-                placeholder="이름을 입력하세요"
-            />
-            {nameError && <p style={{ color: 'rgba(0, 255, 255, 1)' }}>{nameError}</p>}
-            <input
-                type="text"
-                value={contact}
-                onChange={handleContactChange}
-                placeholder="연락처를 입력하세요"
-            />
-            {contactError && <p style={{ color: 'rgba(0, 255, 255, 1)' }}>{contactError}</p>}
-            <button type="submit">사전 예약</button>
+            <div className="formGroup">
+                <label htmlFor="nameInput">이름</label>
+                <input 
+                    id="nameInput"
+                    className="nameInput"
+                    type="text"
+                    value={name}
+                    onChange={handleNameChange}
+                    placeholder="이름을 입력해주세요"
+                />
+                {nameError && <p style={{ color: 'rgba(0, 255, 255, 1)' }}>{nameError}</p>}
+            </div>
+            <div className="formGroup">
+                <label htmlFor="contactInput">연락처</label>
+                <input 
+                    id="contactInput"
+                    className="nameInput"
+                    type="text"
+                    value={contact}
+                    onChange={handleContactChange}
+                    placeholder="연락처를 입력해주세요"
+                />
+                {contactError && <p style={{ color: 'rgba(0, 255, 255, 1)' }}>{contactError}</p>}
+            </div>
+
+            <div className="agreeCheckbox" style={{backgroundColor: isChecked ? 'blue' : 'rgba(0, 255, 255, 1)'}}>
+                <input
+                    id="agree"
+                    type="checkbox"
+                    className="checkbox"
+                    checked={isChecked}
+                    onChange={(e) => setIsChecked(e.target.checked)}
+                />
+                <label htmlFor="agree" style={{color: isChecked ? 'white' : 'black'}}></label>
+                <span style={{color: isChecked ? 'white' : 'black'}}>동의합니다.</span>
+            </div>
+
+
+<button className="submitButton" type='submit'>사전 오픈 알림 신청하기</button>
         </form>
     );
 };

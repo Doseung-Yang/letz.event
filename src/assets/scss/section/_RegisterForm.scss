@@ -1,0 +1,81 @@
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+
+    label {
+        color: rgba(134, 142, 150, 1);
+        margin-bottom: 0.5em;
+        text-align: left;
+    }
+
+    .nameInput {
+        width: 100%;
+        max-width: 420px;
+        height: 56px;
+        border-radius: 4px;
+        border: none;
+        color: rgba(134, 142, 150, 1);
+        background-color: rgba(52, 58, 64, 1);
+        font-size: 18px;
+        font-weight: 500;
+        font-family: 'Pretendard';
+        padding-left: 10px;
+    }
+
+    p {
+        margin-top: 5px;
+    }
+}
+
+.submitButton {
+    width: 100%;
+    max-width: 420px;
+    height: 56px;
+    border-radius: 4px;
+    padding: 0 16px;
+    gap: 8px;
+    background-color: rgba(0, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+    font-size: 18px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+    &:hover {
+        cursor: pointer;
+        // background: rgba(0, 0, 0, 0.8);
+    }
+}
+
+.agreeCheckbox {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 420px;
+    height: 56px;
+    border-radius: 4px;
+    padding: 0 16px;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 500;
+
+    .checkbox {
+        display: none;
+    }
+
+    label {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        background: url('/assets/img/Box.svg') no-repeat;
+        background-size: cover;
+        cursor: pointer;
+    }
+
+    .checkbox:checked + label {
+        background: url('/assets/img/Box.svg') no-repeat;
+        background-size: cover;
+    }
+}
+
+
