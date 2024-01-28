@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
+import { Toaster } from 'react-hot-toast';
 import Header from "@/components/Header";
 import Intro from "@/components/Intro";
 import Skill from "@/components/Skill";
@@ -22,6 +23,7 @@ export default function Home(){
                 <Skill />
                 <Site />
             </main>
+            <Toaster position="bottom-center" />
         </>
     )
 }

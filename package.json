@@ -10,12 +10,17 @@
   },
   "dependencies": {
     "@studio-freight/lenis": "^1.0.34",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
     "google-auth-library": "^9.5.0",
     "google-spreadsheet": "^4.1.1",
+    "googleapis": "^131.0.0",
     "gsap": "^3.12.5",
+    "lodash": "^4.17.21",
     "next": "13.4.12",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.1",
     "react-router-dom": "^6.21.3",
     "sass": "^1.70.0"
   }
