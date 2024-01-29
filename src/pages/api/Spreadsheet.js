@@ -1,5 +1,5 @@
 import { google } from "googleapis";
-import credentials from '../../../../vue.json';
+import credentials from '@/pages/api/vue.json';
 const { client_email, private_key } = credentials;
 
 const authorize = new google.auth.JWT(client_email, null, private_key, ['https://www.googleapis.com/auth/spreadsheets']);

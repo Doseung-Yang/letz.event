@@ -29,7 +29,7 @@ export const introText = [
 
 export const skillText = [
     {
-        title: "테스트",
+        title: "",
        
     },
     {

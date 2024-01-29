@@ -15,3 +15,6 @@ Letz service event page.
 `npm install @studio-freight/lenis`
 
 # letz.event
+.
+// 서버 Spreadsheet
+// 클라 Register
