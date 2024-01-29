@@ -29,15 +29,15 @@ export const introText = [
 
 export const skillText = [
     {
-        title: "",
+        title: "event",
        
     },
     {
-        title: "",
+        subtitle: "사전 오픈 이벤트",
        
     },
     {
-        title: "",
+        subbtitle: "19일부터 25일까지 프로젝트 오픈하고 \n특별한 혜택 받으세요",
       
     }
 ]

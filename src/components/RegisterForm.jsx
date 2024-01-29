@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { toast } from 'react-hot-toast';
 import '../assets/scss/section/_RegisterForm.scss';
 
+
 const RegisterForm = () => {
     const [name, setName] = useState("");
     const [contact, setContact] = useState("");
@@ -43,7 +44,7 @@ const RegisterForm = () => {
         e.preventDefault();
 
         if (!isChecked) {
-            toast.error('체크박스를 체크해주세요.');
+            toast.error('사전 혜택 안내를 위해 개인정보 수집 및 이용에 동의해주세요.');
             return;
         }
 
@@ -84,7 +85,7 @@ const RegisterForm = () => {
         setName("");
         setContact("");
         setIsChecked(false);
-        toast.success('성공적으로 사전예약에 등록되었습니다!');
+        toast.success('사전예약에 접수되었습니다!');
     };
 
     return (
@@ -114,18 +115,27 @@ const RegisterForm = () => {
                 {contactError && <p style={{ color: 'rgba(0, 255, 255, 1)' }}>{contactError}</p>}
             </div>
 
-            <div className="agreeCheckbox" style={{backgroundColor: isChecked ? 'blue' : 'rgba(0, 255, 255, 1)'}}>
-                <input
-                    id="agree"
-                    type="checkbox"
-                    className="checkbox"
-                    checked={isChecked}
-                    onChange={(e) => setIsChecked(e.target.checked)}
-                />
-                <label htmlFor="agree" style={{color: isChecked ? 'white' : 'black'}}></label>
-                <span style={{color: isChecked ? 'white' : 'black'}}>동의합니다.</span>
-            </div>
 
+
+            <div className="agreeCheckbox" style={{ backgroundColor: isChecked ? 'rgba(0, 255, 255, 1)' : 'rgba(52, 58, 64, 1)' }}>
+      <input
+        id="agree"
+        type="checkbox"
+        className="checkbox"
+        checked={isChecked}
+        onChange={(e) => setIsChecked(e.target.checked)}
+      />
+      <label htmlFor="agree" style={{ color: isChecked ? 'white' : 'black' }}></label>
+      <span style={{ color: isChecked ? 'rgba(52, 58, 64, 1)' : 'gray' }}>개인정보 수집 및 이용에 동의합니다.</span>
+    </div>
+    
+    <div className="agreeAbout" style={{ textAlign: 'center', lineHeight: '2' }}>
+  <ul style={{ listStyleType: 'disc', textAlign: 'left', paddingLeft: '20px' }}>
+    <li>수집 및 목적 : 렛즈 베타 서비스 론칭 알림</li>
+    <li>수집 항목 : 이름, 휴대전화번호</li>
+    <li>보유 및 이용 기간 : <span style={{}}>베타 서비스 론칭 후 1개월까지</span></li>
+    </ul>
+    </div>
 
 <button className="submitButton" type='submit'>사전 오픈 알림 신청하기</button>
         </form>

@@ -1,43 +1,42 @@
 #skill {
     height: 100vh;
 }
-.slkll__inner {
+.skill__inner {
     width: 100%;
     height: 100%;
+    display: flex;
     justify-content: space-between;
-    padding: 120px, 0px, 120px, 0px;
+    padding: 120px 0px;
+    justify-content: center;
     
     @media (max-width: 800px){ 
-        
+        justify-content: center;
     }
+}
+.skill__event {
+    width: 420px;
+    height: auto;
+    gap: 40px;
+    text-align: center;
+    
+    
+}
 
-    .skill__desc {
-        width: 50%;
+.skill__event h3 {
+    color: rgba(0, 255, 255, 1);
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.skill__event h1 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
-        @media (max-width: 800px){ 
-            width: 100%;
-        }
-
-        span {
-            font-size: 5vw;
-            line-height: 1;
-            font-weight: 900;
-            line-height: 1.3;
-            font-family: var(--mainNum-font);
-
-            @media (max-width: 800px){ 
-                font-size: 20vw;
-            }
-        }
-        h3 {
-            font-size: 1.5rem;
-            text-decoration: underline;
-            text-underline-position: under;
-            margin-bottom: 1vw;
-        }
-        p {
-            margin-bottom: 30vh;
-            font-size: 1.1rem;
-        }
-    }
+.skill__event p {
+    color: rgba(134, 142, 150, 1);
+    font-size: 1.2rem;
+    
 }

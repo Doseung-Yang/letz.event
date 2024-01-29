@@ -13,7 +13,7 @@ const Intro = () => {
                             <div key={key}>
                             <h3>{intro.title}</h3>
                             <h1>{intro.subtitle}</h1>
-                             <p style={{ whiteSpace: 'pre-line' }}>{intro.subbtitle}</p>
+                            <p style={{ whiteSpace: 'pre-line' }}>{intro.subbtitle}</p>
                         </div>
                         ))}
                         <RegisterForm />

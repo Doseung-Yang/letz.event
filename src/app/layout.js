@@ -8,9 +8,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-      <html lang="ko">
-          <link rel="icon" type="image/svg+xml" href="next.svg" />
-          <body>{children}</body>
-      </html>
+    <html lang="ko">
+      <head>
+      <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+      </head>
+      <body>{children}</body>
+    </html>
   );
 }
