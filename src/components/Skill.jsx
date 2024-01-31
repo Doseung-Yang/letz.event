@@ -16,8 +16,12 @@ const Skill = () => {
                     <h1>{skillText[1].ftitle}</h1>
                         <div className="skill__border">
                             <div className="ftbox">{skillText[1].ftitle1}</div>
+                            <div className="fttitle">{skillText[1].fsubtitle}</div>
+                            <div className="fevbox">{skillText[1].feventtitle}</div>
+                            <img src={skillText[1].imageUrl} alt="description" />
+                            <div className="fssb">{skillText[1].fssubtitle}</div>
                         </div>
-
+                        
                         <div className="skill__border">
                             <div className="ftbox">{skillText[1].ftitle1}</div>
                         </div>

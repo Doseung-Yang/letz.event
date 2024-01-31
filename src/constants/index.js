@@ -36,10 +36,11 @@ export const skillText = [
     {
         ftitle: "혜택",
         ftitle1: "혜택 1",
-        fsubtitle: "공간 와디즈 B1층 \n일주일 무료 대관",
+        fsubtitle: "공간 와디즈 B1층\n 일주일 무료 대관",
         feventtitle: "2000만원 상당",
-        fssubtitle: "최우수 프로젝트 1팀 선정"
-    }
+        fssubtitle: "최우수 프로젝트 1팀 선정",
+        imageUrl: "/GongganWadiz.png"
+    },
 ];
 
 export const siteText = [
