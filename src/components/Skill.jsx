@@ -1,5 +1,6 @@
 import React from "react";
 import { skillText } from "@/constants";
+import { size } from "lodash";
 
 const Skill = () => {
     return (
@@ -22,18 +23,57 @@ const Skill = () => {
                             <div className="fssb">{skillText[1].fssubtitle}</div>
                         </div>
                         
-                        <div className="skill__border">
-                            <div className="ftbox">{skillText[1].ftitle1}</div>
+
+                        <div className="skill__porder">
+                            <div className="ftbox">{skillText[2].ftitle2}</div>
+                            <div className="fttitle">{skillText[2].fsubtitle2}</div>
+                        <div className="fevboxs-container">
+                            <div className="fevboxs">{skillText[2].feventitle1}</div>
+                            <div className="fevboxs">{skillText[2].feventitle2}</div>
+                            <div className="fevboxs">{skillText[2].feventitle3}</div>
+                            </div>
+                            <div className="fssb">{skillText[2].fssubtitle1}</div>
                         </div>
 
-                        <div className="skill__border">
-                            <div className="ftbox">{skillText[1].ftitle1}</div>
+
+                        <div className="skill__porder">
+                            <div className="ftbox">{skillText[3].ftitle3}</div>
+                            <div className="fttitle">{skillText[3].fsubtitle2}</div>
+                        <div className="fevboxs-container">
+                            <div className="fevboxs">{skillText[3].feventitle1}</div>
+                            <div className="fevboxs">{skillText[3].feventitle2}</div>
+                            </div>
+                            <div className="fssb">{skillText[3].fssubtitle1}</div>
                         </div>
 
-                        <div className="skill__border">
-                            <div className="ftbox">{skillText[1].ftitle1}</div>
+
+                        <div className="skill__porder">
+                            <div className="ftbox">{skillText[4].ftitle3}</div>
+                            <div className="fttitle">{skillText[4].fsubtitle2}</div>
+                        <div className="fevboxs-container">
+                            <div className="fevboxs">{skillText[4].feventitle1}</div>
+                            <div className="fevboxs">{skillText[4].feventitle2}</div>
+                            </div>
+                            <div className="fssb">{skillText[4].fssubtitle1}</div>
                         </div>
-                    </div> 
+                    </div>
+
+                    <div className="margin_top">
+                        <h1>{skillText[5].subtitle}</h1>
+                        <div className="skill__dorder">
+                        <p style={{ whiteSpace: 'pre-line', fontSize: '0.8rem' }}>{skillText[5].subbtitle}</p>
+                        </div>
+                    </div>
+                
+
+                    <div className="margin_top">
+                        <h1>{skillText[6].subtitle}</h1>
+                        <div className="skill__dorder">
+                        <p style={{ whiteSpace: 'pre-line', fontSize: '0.8rem' }}>{skillText[5].subbtitle}</p>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </section>
