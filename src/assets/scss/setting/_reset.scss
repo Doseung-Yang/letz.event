@@ -44,9 +44,16 @@ button,
 input,
 select,
 table,
+// 폰트 초기화 
+body,
+button,
+input,
+select,
+table,
 textarea {
-    font-family: var(--mainEng-font), var(--mainKor-font), "Pretendard";
+    font-family: "Pretendard", "Roboto", sans-serif;
 }
+
 
 // 링크 초기화
 a,

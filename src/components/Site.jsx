@@ -1,21 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
+import Lottie from 'lottie-react';
 
 import { siteText } from "@/constants";
 
 const Site = () => {
+    const [animationData, setAnimationData] = useState(null);
+
+    useEffect(() => {
+        fetch('/lottie.json')
+            .then(response => response.json())
+            .then(data => setAnimationData(data));
+    }, []);
+
     return (
         <section id="site">
             <div className="site__inner">
-                <h2 className="site__title">
-                    
-                </h2>
+                <h2 className="site__title"></h2>
                 <div className="site__wrap">
-                    {siteText.map((site, key) => (
-                        <article className={`site__item s${key+1}`} key={key}>
-                            <span className="num">{key+1}.</span>
-                           
-                        </article>
-                    ))}
+                        {animationData && <Lottie animationData={animationData} />}
                 </div>
             </div>
         </section>
