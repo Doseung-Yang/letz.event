@@ -24,7 +24,7 @@ const RegisterForm = () => {
         const input = e.target.value;
         setName(input);
         if (!validateName(input)) {
-            setNameError('이름에는 한글과 영어만 입력 가능합니다.');
+            setNameError('한글과 영어만 입력 가능합니다.');
         } else {
             setNameError("");
         }
@@ -34,7 +34,7 @@ const RegisterForm = () => {
         const input = e.target.value;
         setContact(input);
         if (!validateContact(input)) {
-            setContactError('연락처에는 숫자만 입력 가능합니다.');
+            setContactError('숫자만 입력 가능합니다.');
         } else {
             setContactError("");
         }

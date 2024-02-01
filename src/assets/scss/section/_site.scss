@@ -18,6 +18,13 @@
     .site__wrap > div > div {
         flex-direction: column;
     }
+    .rolling-container {
+        flex-direction: column;
+    }
+    .rollingSSunder {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
 
 @media screen and (min-width: 801px) {
@@ -25,6 +32,9 @@
         padding: 200px 0;  
     }
     .site__wrap > div > div {
+        flex-direction: row;
+    }
+    .rolling-container {
         flex-direction: row;
     }
 }
@@ -71,4 +81,7 @@
     font-size: 1rem;
     font-weight: bold;
     color: rgba(255, 255, 255, 1);
+    white-space: pre-line;
+    text-align: left;
+    position: relative;
 }
