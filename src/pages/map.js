@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import './MapPage.css';
 
 const MapPage = () => {
   const postcodeRef = useRef(null);

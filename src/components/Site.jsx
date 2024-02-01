@@ -27,7 +27,8 @@ const Site = () => {
                                 />
                             </div>
                         }
-                        <h3 style={{ whiteSpace: 'pre-line'}}>{siteText[0].subtitle}</h3>                       
+                        <h2 style={{ whiteSpace: 'pre-line'}}>{siteText[0].subbtitle}</h2>
+                        
                     </div>
                 </div>
             </div>
