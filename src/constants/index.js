@@ -5,7 +5,7 @@ export const headerNav = [
         url: "#intro"
     },
     {
-        title: "benefit",
+        title: "event",
         url: "#skill"
     },
     {
