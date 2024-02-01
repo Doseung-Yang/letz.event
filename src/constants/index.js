@@ -78,7 +78,16 @@ export const skillText = [
 
 export const siteText = [
     {
-       
+        title: "about Letz",
+        subtitle: "누구나 도전하고\n 응원받는 세상을 꿈꿔요",
+        subbtitle: "하고 싶었던 것, 그게 무엇이든\n 분야에 상관없이 도전할 수 있어요",
+        potitle: "프로젝트 개설 부담\n 수수료",
+        potitle1: "0%",
+        potitle2: "프로젝트 오픈까지\n 필요한 시간",
+        potitle3: "3분",
+        potitle4: "도전을 응원할 수 있는\n 멤버들",
+        potitle5: "600만 명+",
+        potitle6: "렛즈에서는 누구나 쉽고 빠르게 도전을 시작하고,\n 응원금 100%를 가져갈 수 있어요",
     },
 ];
 

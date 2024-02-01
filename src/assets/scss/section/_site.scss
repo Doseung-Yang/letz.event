@@ -1,139 +1,44 @@
+#site {
+    height: 100vh;
+}
+
 .site__inner {
-    padding: 16px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;  
 
-    .site__title  {
-        position: sticky;
-        top: 4103px;
-        left: 0;
-        width: 1920px;
-        height: 1151px;
-        font-family: var(--mainKor-font);
-        
-
-        @media (max-width: 500px){ 
-            width: 360px;
-            height: 1828px;
-            top: 1610px;
-            padding: 56px, 0px, 56px, 0px;
-            gap: 56px;
-            background-color: var(--mainBg-color);
-        }
+    @media screen and (max-width: 800px) {
+        padding: 100px 0;  
     }
-    .site__wrap {
-        .site__item {
-            height: 70vh;
-            @include flex-center;
-            flex-direction: column;
-            position: sticky;
-            left: 0;
 
-            &.s1 {
-                background-color:  rgba(16, 19, 24, 1);
-                top: 180px;
-
-                @media (max-width: 800px){ 
-                    top: 140px;
-                }
-            }
-            &.s2 {
-                background-color: var(--subBg200);
-                top: 200px;
-
-                @media (max-width: 800px){ 
-                    top: 160px;
-                }
-            }
-            &.s3 {
-                background-color: var(--subBg300);
-                top: 220px;
-
-                @media (max-width: 800px){ 
-                    top: 180px;
-                }
-            }
-            &.s4 {
-                background-color: var(--subBg400);
-                top: 240px;
-
-                @media (max-width: 800px){ 
-                    top: 200px;
-                }
-            }
-            .num {
-                font-size: 5vw;
-                line-height: 1;
-                font-weight: 900;
-                font-family: var(--mainNum-font);
-                position: absolute;
-                left: 1vw;
-                top: 1vw;
-
-                @media (max-width: 800px){ 
-                    font-size: 80px;
-                    left: 20px;
-                    top: 20px;
-                }
-            }
-            .text {
-                text-align: center;
-                margin-bottom: 1rem;
-
-                > div {
-                    font-size: 3vw;
-                    line-height: 1;
-                    font-weight: 900;
-                    text-transform: uppercase;
-                    text-decoration: underline;
-                    font-family: var(--mainEng-font);
-
-                    @media (max-width: 800px){ 
-                        font-size: 26px;
-                    }
-                }
-            }
-            .title {
-                font-family: var(--mainKor-font);
-                margin-bottom: 1rem;
-            }
-            .btn {
-                a {
-                    text-decoration: underline;
-                    text-transform: uppercase;
-                    color: var(--black200);
-                    font-size: 1rem;
-                    transition: all 0.3s;
-                    margin: 0 2px;
-
-                    &:hover {
-                        color: var(--black);
-                    }
-                }
-            }
-            .info {
-                position: absolute;
-                left: 0;
-                bottom: 3%;
-                width: 98%;
-                margin-left: 1%;
-                border-top: 1px solid var(--black);
-                border-bottom: 1px solid var(--black);
-                display: flex;
-                justify-content: space-between;
-
-                @media (max-width: 800px){ 
-                    flex-direction: column;
-                    width: 90%;
-                    margin-left: 5%;
-                    padding: 5px 0;
-                }
-
-                span {
-                    font-family: var(--mainKor-font);
-                    font-size: 12px;
-                    padding: 3px 0;
-                    text-transform: uppercase;
-                }
-            }
-        }
+    @media screen and (min-width: 801px) {
+        padding: 200px 0;  
     }
+}
+
+.site__wrap {
+    width: 420px;
+    height: auto;
+    gap: 40px;
+    text-align: center;
+}
+
+.site__wrap h3 {
+    color: rgba(0, 255, 255, 1);
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.site__wrap h1 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.site__wrap p {
+    color: rgba(134, 142, 150, 1);
+    font-size: 1.2rem;
 }

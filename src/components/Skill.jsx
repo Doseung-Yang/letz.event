@@ -46,7 +46,6 @@ const Skill = () => {
                             <div className="fssb">{skillText[3].fssubtitle1}</div>
                         </div>
 
-
                         <div className="skill__porder">
                             <div className="ftbox">{skillText[4].ftitle3}</div>
                             <div className="fttitle">{skillText[4].fsubtitle2}</div>

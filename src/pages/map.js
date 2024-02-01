@@ -13,7 +13,6 @@ const MapPage = () => {
         oncomplete: function (data) {
           const message = data.address;
 
-       
           if (window.webkit && window.webkit.messageHandlers) {
             window.webkit.messageHandlers.iosListener.postMessage(message);
           }
@@ -26,7 +25,7 @@ const MapPage = () => {
     };
   }, []);
 
-  return <div ref={postcodeRef} />;
+  return <div className="mapPage" ref={postcodeRef} />;
 };
 
 export default MapPage;
