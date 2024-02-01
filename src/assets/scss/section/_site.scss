@@ -1,5 +1,5 @@
 #site {
-    height: 100vh;
+    height: 180vh;
     overflow: hidden;
 }
 
@@ -9,13 +9,23 @@
     display: flex;
     justify-content: center;
     padding: 100px 0;  
+}
 
-    @media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
+    .site__inner {
         padding: 100px 0;  
     }
+    .site__wrap > div > div {
+        flex-direction: column;
+    }
+}
 
-    @media screen and (min-width: 801px) {
+@media screen and (min-width: 801px) {
+    .site__inner {
         padding: 200px 0;  
+    }
+    .site__wrap > div > div {
+        flex-direction: row;
     }
 }
 
@@ -48,4 +58,17 @@
     color: rgba(255, 255, 255, 1);
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+.rollingSSunder {
+    width: 300px;
+    height: 150px;
+    background-color: rgba(39, 46, 56, 1);
+    border-radius: 15px;
+    padding: 20px 17px;
+    margin-top: 100px;
+    margin-right: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
 }

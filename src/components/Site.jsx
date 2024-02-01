@@ -28,7 +28,12 @@ const Site = () => {
                             </div>
                         }
                         <h2 style={{ whiteSpace: 'pre-line'}}>{siteText[0].subbtitle}</h2>
-                        
+                        <div style={{ display: 'flex', flexDirection: 'row' }}>
+  <div className='rollingSSunder'>{siteText[0].potitle}</div>
+  <div className='rollingSSunder'>{siteText[0].potitle2}</div>
+  <div className='rollingSSunder'>{siteText[0].Ssunder2}</div>
+</div>
+                        <h2 style={{ whiteSpace: 'pre-line', marginTop: '50px'}}>{siteText[0].Ssunabout}</h2>
                     </div>
                 </div>
             </div>
