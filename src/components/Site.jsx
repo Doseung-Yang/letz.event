@@ -46,6 +46,9 @@ const Site = () => {
         }, { threshold: 0.1 });
         observer.observe(observerRef.current);
 
+        // 카카오 SDK 초기화
+        window.Kakao.init('d6083900c37df8a978428436731dc0bc'); 
+
         return () => {
             window.removeEventListener('scroll', handleScroll);
             observer.disconnect();
@@ -66,15 +69,25 @@ const Site = () => {
         });
     };
 
-    const handleKakaoClick = (e) => {
-        e.preventDefault();
+    const shareKakao = () => {
         if (!isMobile) {
             toast.info("모바일에서만 사용 가능합니다.", {
                 position: "bottom-center",
                 autoClose: 3000,
             });
         } else {
-            window.open(`kakaolink://send?url=${encodeURIComponent(shareUrl)}`, '_blank');
+            window.Kakao.Link.sendDefault({
+              objectType: 'feed',
+              content: {
+                title: '공유하고 가장 먼저 사용해보세요!',
+                description: '공유하고 가장 먼저 사용해보세요!',
+                imageUrl: 'https://i.ibb.co/q7TvZSX/1200-X630.png',
+                link: {
+                  mobileWebUrl: shareUrl,
+                  webUrl: shareUrl,
+                },
+              },
+            });
         }
     };
 
@@ -115,9 +128,8 @@ const Site = () => {
                         </div>
                         <h2 style={{ whiteSpace: 'pre-line', marginTop: '50px'}}>{siteText[0].Ssunabout}</h2>
                         <div className='lastTitle'> {siteText[0].footer_1}</div>
-                        <div style={{ display: 'flex', justifyContent: 'center', gap: '3rem', marginTop: '1rem', marginBottom: '1rem', display: 'flex',flexdirection: 'row'}}>
-
-                            <a href={`kakaolink://send?url=${encodeURIComponent(shareUrl)}`} onClick={handleKakaoClick}>
+                        <div style={{ display: 'flex', justifyContent: 'center', gap: '3rem', marginTop: '1rem', marginBottom: '1rem'}}>
+                            <a href="#" onClick={shareKakao}>
                                 <SnsIcon src="/kakao.svg" alt="share_icon"/>
                             </a>
                             <SnsIcon src="/ctrlcv.svg" alt="ctrl_icon" onClick={copyToClipboard}/>
