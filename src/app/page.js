@@ -8,6 +8,7 @@ import Skill from "@/components/Skill";
 import Site from "@/components/Site";
 import smooth from "@/utils/smooth";
 import link from "@/utils/link";
+import Share from "@/components/share";
 
 export default function Home(){
     useEffect(() => {
@@ -22,6 +23,7 @@ export default function Home(){
                 <Intro />
                 <Skill />
                 <Site />
+                <Share />
             </main>
             <Toaster position="bottom-center" />
         </>
