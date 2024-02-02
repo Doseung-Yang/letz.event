@@ -66,12 +66,15 @@ const Site = () => {
         });
     };
 
-    const handleKakaoClick = () => {
+    const handleKakaoClick = (e) => {
+        e.preventDefault();
         if (!isMobile) {
             toast.info("모바일에서만 사용 가능합니다.", {
                 position: "bottom-center",
                 autoClose: 3000,
             });
+        } else {
+            window.open(`kakaolink://send?url=${encodeURIComponent(shareUrl)}`, '_blank');
         }
     };
 
@@ -126,5 +129,4 @@ const Site = () => {
         </section>
     );
 }
-
 export default Site;
