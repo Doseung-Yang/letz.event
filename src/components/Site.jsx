@@ -17,8 +17,8 @@ const SnsIcon = styled.img`
         }
 
         @media (max-width: 480px) {
-        width: 40px;
-        height: 60px;
+        width: 50px;
+        height: 80px;
         margin-top: 60px;
         }`;
 
