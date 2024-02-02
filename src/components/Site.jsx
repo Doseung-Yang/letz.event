@@ -115,7 +115,7 @@ const Site = () => {
                         </div>
                         <h2 style={{ whiteSpace: 'pre-line', marginTop: '50px'}}>{siteText[0].Ssunabout}</h2>
                         <div className='lastTitle'> {siteText[0].footer_1}</div>
-                        <div style={{ display: 'flex', justifyContent: 'center', gap: '3rem', marginTop: '1rem', marginBottom: '1rem', display: 'flex' }}>
+                        <div style={{ display: 'flex', justifyContent: 'center', gap: '3rem', marginTop: '1rem', marginBottom: '1rem', display: 'flex',flexdirection: 'row'}}>
 
                             <a href={`kakaolink://send?url=${encodeURIComponent(shareUrl)}`} onClick={handleKakaoClick}>
                                 <SnsIcon src="/kakao.svg" alt="share_icon"/>
