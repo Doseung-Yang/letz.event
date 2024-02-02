@@ -3,24 +3,26 @@ import Lottie from 'lottie-react';
 import { siteText } from "@/constants";
 import CountUp from 'react-countup';
 import styled from 'styled-components';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { isMobile } from 'react-device-detect';
 
 const SnsIcon = styled.img`
-        width: 61px;
-        height: 100px;
-        cursor: pointer;
-        margin-top: 100px;
+    width: 61px;
+    height: auto; 
+    cursor: pointer;
+    margin-top: 100px;
 
-        @media (max-width: 768px) {
+    @media (max-width: 768px) {
         width: 50px;
-        height: 80px;
         margin-top: 80px;
-        }
+    }
 
-        @media (max-width: 480px) {
+    @media (max-width: 480px) {
         width: 50px;
-        height: 80px;
         margin-top: 60px;
-        }`;
+    }
+`;
 
 const Site = () => {
     const [animationData, setAnimationData] = useState(null);
@@ -50,20 +52,26 @@ const Site = () => {
         }
     }, []);
 
-    const countEndPercent = Math.max(10 - Math.floor(scrollY / 100), 0);
+    const countEndPercent = Math.max(Math.floor(scrollY / 100), 100);
+    const countEndMember = Math.max(Math.floor(scrollY / 100), 600);
     const countEndMinutes = Math.max(10 - Math.floor(scrollY / 100), 3);
-    const countEndMember = Math.min(Math.floor(scrollY / 100), 9);
 
-    const shareContent = async () => {
-        try {
-            await navigator.share({
-                title: '공유하고 가장 먼저 사용해보세요!',
-                text: '공유하고 가장 먼저 사용해보세요!',
-                url: 'https://campaign.letz.team/',
+    const shareUrl = 'https://campaign.letz.team/';
+
+    const copyToClipboard = () => {
+        navigator.clipboard.writeText(shareUrl);
+        toast.success("링크가 복사되었습니다.", {
+            position: "bottom-center",
+            autoClose: 3000,
+        });
+    };
+
+    const handleKakaoClick = () => {
+        if (!isMobile) {
+            toast.info("모바일에서만 사용 가능합니다.", {
+                position: "bottom-center",
+                autoClose: 3000,
             });
-            console.log('공유가 성공적으로 이루어졌습니다.');
-        } catch (err) {
-            console.log('공유 실패:', err);
         }
     };
 
@@ -83,30 +91,34 @@ const Site = () => {
                                 />
                             </div>
                         }
+                        <h2 style={{ whiteSpace: 'pre-line', marginTop: '50px'}}>{siteText[0].tabtitle}</h2>
                         <div className="rolling-container" style={{ display: 'flex', position: 'relative' }} ref={observerRef}>
-                        <div className='rollingSSunder'>
-                                {siteText[0].potitle}
-                                <div style={{ position: 'absolute', right: 30, bottom: 15, fontSize: '2rem'}}>
-                                {isVisible && <CountUp end={countEndPercent} duration={10} suffix='%'/>}
-                                </div>
-                            </div>
-
                             <div className='rollingSSunder'>{siteText[0].potitle2}
                                 <div style={{ position: 'absolute', right: 30, bottom: 15, fontSize: '2rem'}}>
-                                {isVisible && <CountUp end={countEndMinutes} duration={10} suffix='분'/>}
+                                    {isVisible && <CountUp end={countEndMinutes} duration={10} suffix='분'/>}
                                 </div>
                             </div>
-
                             <div className='rollingSSunder'>{siteText[0].Ssunder2}
-                            <div style={{ position: 'absolute', right: 30, bottom: 15, fontSize: '2rem'}}>
-                                {isVisible && <CountUp end={countEndMember} duration={10} suffix='만 명+'/>}
+                                <div style={{ position: 'absolute', right: 30, bottom: 15, fontSize: '2rem'}}>
+                                    {isVisible && <CountUp end={countEndMember} duration={4} suffix='만 명+'/>}
+                                </div>
+                            </div>
+                            <div className='rollingSSunder'>
+                                {siteText[0].potitle}
+                                <div style={{ position: 'absolute', right: 30, bottom: 15, fontSize: '2rem'}}>
+                                    {isVisible && <CountUp end={countEndPercent} duration={4} suffix='%'/>}
                                 </div>
                             </div>
                         </div>
                         <h2 style={{ whiteSpace: 'pre-line', marginTop: '50px'}}>{siteText[0].Ssunabout}</h2>
-            
-                    <div className='lastTitle'> {siteText[0].footer_1}</div>
-                    <SnsIcon src="/sns_icon.png" alt="share_icon" onClick={shareContent}/>
+                        <div className='lastTitle'> {siteText[0].footer_1}</div>
+                        <div style={{ display: 'flex', justifyContent: 'center', gap: '3rem', marginTop: '1rem' }}>
+                            <a href={`kakaolink://send?url=${encodeURIComponent(shareUrl)}`} onClick={handleKakaoClick}>
+                                <SnsIcon src="/kakao.svg" alt="share_icon"/>
+                            </a>
+                            <SnsIcon src="/ctrlcv.svg" alt="ctrl_icon" onClick={copyToClipboard}/>
+                        </div>
+                        <ToastContainer />
                     </div>
                 </div>
             </div>

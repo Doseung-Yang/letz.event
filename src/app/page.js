@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import Intro from "@/components/Intro";
 import Skill from "@/components/Skill";
 import Site from "@/components/Site";
+import Footer from "@/components/Footer";
 import smooth from "@/utils/smooth";
 import link from "@/utils/link";
 
@@ -22,6 +23,7 @@ export default function Home(){
                 <Intro />
                 <Skill />
                 <Site />
+                <Footer />
             </main>
             <Toaster position="bottom-center" />
         </>

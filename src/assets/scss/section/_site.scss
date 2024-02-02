@@ -8,17 +8,18 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    padding: 100px 0;  
+    padding: 100px 0;
 }
 
 @media screen and (max-width: 800px) {
     .site__inner {
-        padding: 100px 0;  
+        padding: 50px 0;
     }
-    .site__wrap > div > div {
-        flex-direction: column;
+    .site__wrap {
+        width: 100%;
+        padding: 0 20px;
     }
-    .rolling-container {
+    .site__wrap > div > div, .rolling-container {
         flex-direction: column;
     }
     .rollingSSunder {
@@ -29,18 +30,17 @@
 
 @media screen and (min-width: 801px) {
     .site__inner {
-        padding: 200px 0;  
+        padding: 200px 0;
     }
-    .site__wrap > div > div {
-        flex-direction: row;
+    .site__wrap {
+        width: 420px;
     }
-    .rolling-container {
+    .site__wrap > div > div, .rolling-container {
         flex-direction: row;
     }
 }
 
 .site__wrap {
-    width: 420px;
     height: auto;
     gap: 40px;
     text-align: center;

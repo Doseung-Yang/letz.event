@@ -1,0 +1,40 @@
+.final__footer {
+    width: 100%;
+    height: auto; /* 높이를 자동으로 설정하여 내용에 맞게 변경 */
+    color: rgba(134, 142, 150, 1);
+    background-color: rgba(52, 58, 64, 1);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 3rem 2rem;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.final__footer__title {
+    list-style-type: disc;
+    text-align: center;
+}
+
+.final__footer ul {
+    padding: 0;
+    list-style-position: inside;
+}
+
+.final__footer__title h2 {
+    font-size: 1.2rem;
+    padding-top: 3rem;
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    .final__footer__title h2 {
+        padding-left: 26rem;
+        text-align: left; 
+    }
+
+    .final__footer ul {
+        padding-left: 28rem;
+        text-align: left; 
+        list-style-type: disc;
+    }
+}
