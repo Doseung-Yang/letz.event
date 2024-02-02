@@ -1,5 +1,5 @@
 #site {
-    height: 180vh;
+    height: 230vh;
     overflow: hidden;
 }
 
@@ -93,4 +93,10 @@
     margin-top: 100px;
     text-align: center;
     font-weight: bold;
+}
+
+.SnsIcon {
+    z-index: 10;
+    position: relative;
+    margin-bottom: 2rem; /* 필요한 경우 조정하세요. */
 }

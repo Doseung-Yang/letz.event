@@ -83,7 +83,7 @@ const Site = () => {
                         <h3>{siteText[0].title}</h3>
                         <h1 style={{ whiteSpace: 'pre-line'}}>{siteText[0].subtitle}</h1> 
                         {animationData && 
-                            <div style={{ position: 'relative', width: '1700px', height: '300px', alignSelf: 'center' }}>
+                            <div style={{ position: 'relative', width: '100%', height: '300px', alignSelf: 'center' }}>
                                 <Lottie 
                                     animationData={animationData} 
                                     style={{ position: 'absolute', width: '100%', height: '100%' }}
@@ -112,7 +112,8 @@ const Site = () => {
                         </div>
                         <h2 style={{ whiteSpace: 'pre-line', marginTop: '50px'}}>{siteText[0].Ssunabout}</h2>
                         <div className='lastTitle'> {siteText[0].footer_1}</div>
-                        <div style={{ display: 'flex', justifyContent: 'center', gap: '3rem', marginTop: '1rem' }}>
+                        <div style={{ display: 'flex', justifyContent: 'center', gap: '3rem', marginTop: '1rem', marginBottom: '1rem' }}>
+
                             <a href={`kakaolink://send?url=${encodeURIComponent(shareUrl)}`} onClick={handleKakaoClick}>
                                 <SnsIcon src="/kakao.svg" alt="share_icon"/>
                             </a>
