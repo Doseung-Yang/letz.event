@@ -2,6 +2,7 @@
 
 import React, { useEffect } from "react";
 import { Toaster } from 'react-hot-toast';
+import First from "@/components/First";
 import Header from "@/components/Header";
 import Intro from "@/components/Intro";
 import Skill from "@/components/Skill";
@@ -18,6 +19,7 @@ export default function Home(){
 
     return (
         <>  
+            <First />
             <Header />
             <main id="main" role="main">
                 <Intro />

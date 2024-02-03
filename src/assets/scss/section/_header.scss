@@ -61,7 +61,8 @@
         cursor: pointer;
 
         @media (max-width: 800px){
-            display: block;
+            padding: 10px;
+            margin-right: 1rem;
         }
 
         span {

@@ -4,12 +4,7 @@ import { headerNav } from "@/constants";
 import LetzLogo from '@/assets/img/wadiz.svg'
 
 const Header = () => {
-    const [show, setShow] = useState(false);
     const [activeLink, setActiveLink] = useState("#intro");
-
-    const toggleMenu = () => {
-        setShow((prevShow) => !prevShow);
-    }
 
     const handleClick = (e, url) => {
         e.preventDefault();
@@ -28,6 +23,7 @@ const Header = () => {
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
+
         return () => {
             window.removeEventListener('scroll', handleScroll);
         }
@@ -48,7 +44,7 @@ const Header = () => {
                 </div>
                 
                 <nav 
-                    className={`header__nav ${show ? "show" : ""}`} 
+                    className="header__nav" 
                     role="navigation" 
                     aria-label="메인 메뉴"
                 >
@@ -66,17 +62,6 @@ const Header = () => {
                         ))}
                     </ul>
                 </nav>
-                <div 
-                    className="header__nav__mobile" 
-                    id="headerToggle" 
-                    aria-controls="primary-menu" 
-                    aria-expanded={show ? "true" : "false"} 
-                    role="button"
-                    tabIndex="0"
-                    onClick={toggleMenu}
-                >
-                    <span></span>
-                </div>
             </div>
             
         </header>

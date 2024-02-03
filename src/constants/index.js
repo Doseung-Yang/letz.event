@@ -14,6 +14,12 @@ export const headerNav = [
     }
 ];
 
+export const firstText = [
+    {
+        imageUrl: "/first.svg",
+    }
+]
+
 export const introText = [
     {
         title: "coming-soon",

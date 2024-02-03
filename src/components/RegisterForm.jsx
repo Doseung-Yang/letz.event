@@ -99,6 +99,7 @@ const RegisterForm = () => {
                     value={name}
                     onChange={handleNameChange}
                     placeholder="이름을 입력해주세요"
+                    style={{ color: name ? 'rgba(0, 255, 255, 1)' : 'rgba(255, 255, 255, 1)' }}
                 />
                 {nameError && <p style={{ color: 'rgba(0, 255, 255, 1)' }}>{nameError}</p>}
             </div>
@@ -111,13 +112,15 @@ const RegisterForm = () => {
                     value={contact}
                     onChange={handleContactChange}
                     placeholder="연락처를 입력해주세요"
+                    style={{ color: name ? 'rgba(0, 255, 255, 1)' : 'rgba(255, 255, 255, 1)' }}
                 />
                 {contactError && <p style={{ color: 'rgba(0, 255, 255, 1)' }}>{contactError}</p>}
             </div>
 
 
 
-            <div className="agreeCheckbox" style={{ backgroundColor: isChecked ? 'rgba(0, 255, 255, 1)' : 'rgba(52, 58, 64, 1)' }}>
+            <div className="agreeCheckbox" style={{ backgroundColor: isChecked ? 'rgba(52, 58, 64, 1)' : 'rgba(52, 58, 64, 1)', cursor: 'pointer' }}
+            onClick={() => setIsChecked(!isChecked)}>
       <input
         id="agree"
         type="checkbox"
@@ -125,8 +128,8 @@ const RegisterForm = () => {
         checked={isChecked}
         onChange={(e) => setIsChecked(e.target.checked)}
       />
-      <label htmlFor="agree" style={{ color: isChecked ? 'white' : 'black' }}></label>
-      <span style={{ color: isChecked ? 'rgba(52, 58, 64, 1)' : 'gray' }}>개인정보 수집 및 이용에 동의합니다.</span>
+      <label htmlFor="agree" style={{ color: isChecked ? 'white' : 'rgba(134, 142, 150, 1)' }}></label>
+      <span style={{ color: isChecked ? 'rgba(46, 213, 213, 1)' : 'gray' }}>개인정보 수집 및 이용에 동의합니다.</span>
     </div>
     
     <div className="agreeAbout" style={{ textAlign: 'center', lineHeight: '2' }}>
