@@ -3,6 +3,7 @@ import '@/assets/scss/section/_footer.scss';
 
 const Footer = () => {
     return (
+        <section id="footer">
         <div className="final__footer">
             <div className='final__footer__title'>
                 <h2>NOTICE</h2>
@@ -18,6 +19,7 @@ const Footer = () => {
                 </ul>
             </div>
         </div>
+        </section>
     );
 }
 export default Footer;
