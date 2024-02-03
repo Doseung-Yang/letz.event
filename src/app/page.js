@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import { Toaster } from 'react-hot-toast';
-import First from "@/components/First";
+import First from "@/components/first";
 import Header from "@/components/Header";
 import Intro from "@/components/Intro";
 import Skill from "@/components/Skill";
