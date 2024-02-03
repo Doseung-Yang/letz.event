@@ -63,6 +63,8 @@ const RegisterForm = () => {
             return;
         }
 
+        const loadingToast = toast.loading('접수 중입니다...');
+
         const res = await fetch('/api/Spreadsheet', {
             method: 'POST',
             headers: {
@@ -79,12 +81,14 @@ const RegisterForm = () => {
             } else {
                 console.error(data);
             }
+            toast.dismiss(loadingToast);
             return;
         }
 
         setName("");
         setContact("");
         setIsChecked(false);
+        toast.dismiss(loadingToast);
         toast.success('사전예약에 접수되었습니다!');
     };
 
@@ -117,38 +121,36 @@ const RegisterForm = () => {
                 {contactError && <p style={{ color: 'rgba(0, 255, 255, 1)' }}>{contactError}</p>}
             </div>
 
-
-
             <div className="agreeCheckbox" style={{ backgroundColor: isChecked ? 'rgba(52, 58, 64, 1)' : 'rgba(52, 58, 64, 1)', cursor: 'pointer' }}
             onClick={() => setIsChecked(!isChecked)}>
-      <input
-        id="agree"
-        type="checkbox"
-        className="checkbox"
-        checked={isChecked}
-        onChange={(e) => setIsChecked(e.target.checked)}
-      />
-      <label htmlFor="agree" style={{ color: isChecked ? 'white' : 'rgba(134, 142, 150, 1)' }}></label>
-      <span style={{ color: isChecked ? 'rgba(46, 213, 213, 1)' : 'gray' }}>개인정보 수집 및 이용에 동의합니다.</span>
-    </div>
+              <input
+                id="agree"
+                type="checkbox"
+                className="checkbox"
+                checked={isChecked}
+                onChange={(e) => setIsChecked(e.target.checked)}
+              />
+              <label htmlFor="agree" style={{ color: isChecked ? 'white' : 'rgba(134, 142, 150, 1)' }}></label>
+              <span style={{ color: isChecked ? 'rgba(46, 213, 213, 1)' : 'gray' }}>개인정보 수집 및 이용에 동의합니다.</span>
+            </div>
     
-    <div className="agreeAbout" style={{ textAlign: 'center', lineHeight: '2' }}>
-  <ul style={{ listStyleType: 'disc', textAlign: 'left', paddingLeft: '20px' }}>
-    <li>수집 및 목적 : 렛즈 베타 서비스 론칭 알림</li>
-    <li>수집 항목 : 이름, 휴대전화번호</li>
-    <li>보유 및 이용 기간 : <span style={{}}>베타 서비스 론칭 후 1개월까지</span></li>
-    </ul>
-    </div>
+            <div className="agreeAbout" style={{ textAlign: 'center', lineHeight: '2' }}>
+              <ul style={{ listStyleType: 'disc', textAlign: 'left', paddingLeft: '20px' }}>
+                <li>수집 및 목적 : 렛즈 베타 서비스 론칭 알림</li>
+                <li>수집 항목 : 이름, 휴대전화번호</li>
+                <li>보유 및 이용 기간 : <span style={{}}>베타 서비스 론칭 후 1개월까지</span></li>
+              </ul>
+            </div>
 
-    <div className="agreeAbout" style={{ textAlign: 'center', lineHeight: '2', height:'124px', transform: 'translateY(-20px)'}}>
-  <ul style={{ listStyleType: 'disc', textAlign: 'left', paddingLeft: '20px'}}>
-    <li>귀하는 동의를 거부할 수 있습니다.&nbsp; 다만 동의를 거부할 경우 사전 알림 정보 제공이 제한됩니다.</li>
-    <li>렛즈 베타 서비스는 현재 iOS에서만 사용 가능합니다. </li>
-    <li>2월 19일 이후 앱 업데이트 후 사용해주세요.</li>
-    </ul>
-    </div>
+            <div className="agreeAbout" style={{ textAlign: 'center', lineHeight: '2', height:'124px', transform: 'translateY(-20px)'}}>
+              <ul style={{ listStyleType: 'disc', textAlign: 'left', paddingLeft: '20px'}}>
+                <li>귀하는 동의를 거부할 수 있습니다.&nbsp; 다만 동의를 거부할 경우 사전 알림 정보 제공이 제한됩니다.</li>
+                <li>렛즈 베타 서비스는 현재 iOS에서만 사용 가능합니다. </li>
+                <li>2월 19일 이후 앱 업데이트 후 사용해주세요.</li>
+              </ul>
+            </div>
 
-<button className="submitButton" type='submit'>사전 오픈 알림 신청하기</button>
+            <button className="submitButton" type='submit'>사전 오픈 알림 신청하기</button>
         </form>
     );
 };
