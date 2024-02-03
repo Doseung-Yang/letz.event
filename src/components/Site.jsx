@@ -63,7 +63,7 @@ const Site = () => {
 
     const copyToClipboard = () => {
         navigator.clipboard.writeText(shareUrl);
-        toast.success("링크가 복사되었습니다.", {
+        toast.success("링크가 복사되었습니다 🥰", {
             position: "bottom-center",
             autoClose: 3000,
         });
@@ -78,11 +78,12 @@ const Site = () => {
         } else {
             window.Kakao.Link.sendDefault({
               objectType: 'feed',
+              templateId: 103936,
               content: {
                 title: '누구나 도전하고 응원받을 수 있어요',
                 description: '공유하고 가장 먼저 사용해보세요!',
                 imageUrl: 'https://i.postimg.cc/50VktzV9/letz.png',
-                templateId: 103936,
+                
                 link: {
                   mobileWebUrl: shareUrl,
                   webUrl: shareUrl,
