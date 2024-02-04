@@ -20,7 +20,7 @@ const First = () => {
         const handleResize = () => {
             if (window.innerWidth <= 768) {
                 setAnimationData(MOAnimationData);
-                setTop(-18);
+                setTop(-10);
                 setIsMobile(true);
             } else {
                 setAnimationData(PCAnimationData);
@@ -91,7 +91,7 @@ const First = () => {
                         )}
                         <Lottie 
                             options={defaultOptions}
-                            style={{ position: 'absolute', top: `${top}%`, left: 0, width: '100%', height: '100%' }}
+                            style={{ position: 'absolute', top: `${top}%`, left: 0, width: '90%', height: '90%' }}
                         />
                         {isMobile && (
                             <>
@@ -106,7 +106,7 @@ const First = () => {
                                         ))}
                                     </ul>
                                 </nav>
-                                <div style={{ position: 'absolute', top: '10%', left: '0', textAlign: 'center', width: '100%' }}>
+                                <div style={{ position: 'absolute', top: '10%', left: '0', textAlign: 'center', width: '100%'}}>
                                     <p style={{color: 'white', fontSize: '2rem', fontWeight: 'bold'}}>렛즈 베타 서비스 오픈</p>
                                 </div>
                             </>
