@@ -61,7 +61,7 @@ const Skill = () => {
                     <div className="margin_top">
                         <h1>{skillText[5].subtitle}</h1>
                         <div className="skill__dorder">
-                        <p style={{ whiteSpace: 'pre-line', fontSize: '0.8rem', fontWeight: 'bold', color: 'rgba(205, 211, 216, 1)'}}>{skillText[5].subbtitle}</p>
+                        <p style={{ whiteSpace: 'pre-line', fontSize: '0.9rem', fontWeight: 'bold', color: 'rgba(205, 211, 216, 1)'}}>{skillText[5].subbtitle}</p>
                         </div>
                     </div>
                 
@@ -70,9 +70,9 @@ const Skill = () => {
                         <h1>{skillText[6].subtitle}</h1>
                         <div className="skill__qorder">
                             <div className="pop">{skillText[6].number}</div>
-                        <p style={{ whiteSpace: 'pre-line', fontSize: '0.8rem', color: 'rgba(205, 211, 216, 1)'}}>{skillText[6].subbtitle}</p>
+                        <p style={{ whiteSpace: 'pre-line', fontSize: '1rem', color: 'rgba(205, 211, 216, 1)', marginBottom: '0.8rem', marginTop: '0.5rem'}}>{skillText[6].subbtitle}</p>
                         <div className="pop">{skillText[6].number1}</div>
-                        <p style={{ whiteSpace: 'pre-line', fontSize: '0.8rem', color: 'rgba(205, 211, 216, 1)'}}>{skillText[6].subbtitle1}</p>
+                        <p style={{ whiteSpace: 'pre-line', fontSize: '1rem', color: 'rgba(205, 211, 216, 1)', marginTop: '0.5rem'}}>{skillText[6].subbtitle1}</p>
                         </div>
                     </div>
 

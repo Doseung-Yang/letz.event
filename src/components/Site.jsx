@@ -98,7 +98,7 @@ const Site = () => {
                         <h3>{siteText[0].title}</h3>
                         <h1 style={{ whiteSpace: 'pre-line'}}>{siteText[0].subtitle}</h1> 
                         {animationData && 
-                            <div style={{ position: 'relative', width: '1920%', height: '230px',alignSelf: 'center' }}>
+                            <div style={{ position: 'relative', width: '1600px', height: '230px',alignSelf: 'center' }}>
                                 <Lottie 
                                     animationData={animationData} 
                                     style={{ position: 'absolute', width: '100%', height: '100%'}}
