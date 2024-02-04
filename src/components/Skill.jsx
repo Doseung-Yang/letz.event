@@ -14,10 +14,11 @@ const Skill = () => {
                         <p style={{ whiteSpace: 'pre-line' }}>{skillText[0].subbtitle}</p>
                     </div>
                     <div className="skill__special">
-                    <h1>{skillText[1].ftitle}</h1>
+                   
                         <div className="skill__border">
                             <div className="ftbox">{skillText[1].ftitle1}</div>
-                            <div className="fttitle">{skillText[1].fsubtitle}</div>
+                            <div className="fttitle">{skillText[1].fsubtitle}
+                            </div>
                             <div className="fevbox">{skillText[1].feventtitle}</div>
                             <img src={skillText[1].imageUrl} alt="description" />
                             <div className="fssb">{skillText[1].fssubtitle}</div>
@@ -69,9 +70,9 @@ const Skill = () => {
                         <h1>{skillText[6].subtitle}</h1>
                         <div className="skill__qorder">
                             <div className="pop">{skillText[6].number}</div>
-                        <p style={{ whiteSpace: 'pre-line', fontSize: '0.8rem', fontWeight: 'bold', color: 'rgba(205, 211, 216, 1)'}}>{skillText[6].subbtitle}</p>
+                        <p style={{ whiteSpace: 'pre-line', fontSize: '0.8rem', color: 'rgba(205, 211, 216, 1)'}}>{skillText[6].subbtitle}</p>
                         <div className="pop">{skillText[6].number1}</div>
-                        <p style={{ whiteSpace: 'pre-line', fontSize: '0.8rem', fontWeight: 'bold', color: 'rgba(205, 211, 216, 1)'}}>{skillText[6].subbtitle1}</p>
+                        <p style={{ whiteSpace: 'pre-line', fontSize: '0.8rem', color: 'rgba(205, 211, 216, 1)'}}>{skillText[6].subbtitle1}</p>
                         </div>
                     </div>
 

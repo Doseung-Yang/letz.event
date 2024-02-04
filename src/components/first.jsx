@@ -9,13 +9,18 @@ const First = () => {
     const [animationData, setAnimationData] = useState(PCAnimationData);
     const [top, setTop] = useState(0);
     const [isMobile, setIsMobile] = useState(false);
-    const [timeLeft, setTimeLeft] = useState({});
-
+    const [timeLeft, setTimeLeft] = useState({
+        days: '00',
+        hours: '00',
+        minutes: '00',
+        seconds: '00'
+    });
+    
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth <= 768) {
                 setAnimationData(MOAnimationData);
-                setTop(-13);
+                setTop(-18);
                 setIsMobile(true);
             } else {
                 setAnimationData(PCAnimationData);
@@ -38,10 +43,10 @@ const First = () => {
             const now = new Date().getTime();
             const distance = countdownDate - now;
 
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24)).toString().padStart(2, '0');
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, '0');
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0');
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000).toString().padStart(2, '0');
 
             setTimeLeft({
                 days: days,

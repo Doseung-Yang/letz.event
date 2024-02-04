@@ -121,18 +121,26 @@ const RegisterForm = () => {
                 {contactError && <p style={{ color: 'rgba(0, 255, 255, 1)' }}>{contactError}</p>}
             </div>
 
-            <div className="agreeCheckbox" style={{ backgroundColor: isChecked ? 'rgba(52, 58, 64, 1)' : 'rgba(52, 58, 64, 1)', cursor: 'pointer' }}
-            onClick={() => setIsChecked(!isChecked)}>
-              <input
-                id="agree"
-                type="checkbox"
-                className="checkbox"
-                checked={isChecked}
-                onChange={(e) => setIsChecked(e.target.checked)}
-              />
-              <label htmlFor="agree" style={{ color: isChecked ? 'white' : 'rgba(134, 142, 150, 1)' }}></label>
-              <span style={{ color: isChecked ? 'rgba(46, 213, 213, 1)' : 'gray' }}>개인정보 수집 및 이용에 동의합니다.</span>
+            <div className="agreeCheckbox" 
+                style={{ backgroundColor: isChecked ? 'rgba(73, 80, 87, 1)' : '#1D2129', cursor: 'pointer' }}
+                onClick={() => setIsChecked(!isChecked)}
+            >
+                <input
+                    id="agree"
+                    type="checkbox"
+                    className="checkbox"
+                    checked={isChecked}
+                    onClick={(e) => e.stopPropagation()} 
+                />
+                <label htmlFor="agree" style={{ color: isChecked ? 'white' : 'rgba(134, 142, 150, 1)' }}></label>
+                <span style={{ color: isChecked ? 'white' : 'gray' }}>개인정보 수집 및 이용에 동의합니다.</span>
             </div>
+
+
+
+
+
+
     
             <div className="agreeAbout" style={{ textAlign: 'center', lineHeight: '2' }}>
               <ul style={{ listStyleType: 'disc', textAlign: 'left', paddingLeft: '20px' }}>
