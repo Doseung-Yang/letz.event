@@ -46,7 +46,7 @@
 
 .skill__border {
     width: 400px;
-    height: 380px;
+    height: 390px;
     border-radius: 20px;
     padding: 30px 30px 20px;
     background-color: rgba(36, 41, 47, 1);
@@ -55,8 +55,10 @@
     justify-content: flex-start;
     align-items: center;
 
-    @media screen and (max-width: 460px) {
-        width: 100%;
+    @media (max-width: 768px) {
+        width: calc(100% - 20px);
+        margin-left: 10px;  
+        margin-right: 10px;
     }
 }
 
@@ -72,14 +74,16 @@
     justify-content: flex-start;
     align-items: center;
 
-    @media screen and (max-width: 460px) {
-        width: 100%;
+    @media (max-width: 768px) {
+        width: calc(100% - 20px);
+        margin-left: 10px;  
+        margin-right: 10px;
     }
 }
 
 .skill__dorder {
     width: 400px;
-    height: 110px;
+    height: 210px;
     margin-top: 10px;
     border-radius: 20px;
     padding: 19px 21px 20px;
@@ -89,10 +93,28 @@
     justify-content: center;
     align-items: center;
 
-    @media screen and (max-width: 460px) {
-        width: 100%;
+    .skill__ddorder {  // 클래스명을 .skill__ddorder로 변경
+        width: 320px;
+        height: 60px;
+        background-color: #343A40;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        border-radius: 10px;
+        padding: 19px 21px 20px;
+    }
+    
+    @media (max-width: 768px) {
+        width: calc(100% - 20px);
+        margin-left: 10px;  
+        margin-right: 10px;
     }
 }
+
+
 
 
 .skill__qorder {
@@ -107,10 +129,13 @@
     justify-content: center;
     align-items: center;
 
-    @media screen and (max-width: 460px) {
-        width: 100%;
+    @media (max-width: 768px) {
+        width: calc(100% - 20px);
+        margin-left: 10px;  
+        margin-right: 10px;
     }
 }
+
 
 .ftbox {
     background-color: rgba(0, 255, 255, 1);
@@ -177,7 +202,7 @@
 }
 
 .fssb {
-    margin-top: 6px;
+    margin-top: 15px;
     margin-bottom: 100px;
     color: rgba(0, 255, 255, 1);
     font-size: 0.8rem;

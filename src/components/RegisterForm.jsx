@@ -54,7 +54,7 @@ const RegisterForm = () => {
         }
 
         if (contact === '') {
-            toast.error('연락처를 입력해주세요.');
+            toast.error('휴대전화번호를 입력해주세요.');
             return;
         }
 
@@ -115,7 +115,7 @@ const RegisterForm = () => {
                     type="text"
                     value={contact}
                     onChange={handleContactChange}
-                    placeholder="연락처를 입력해주세요"
+                    placeholder="휴대전화번호를 입력해주세요"
                     style={{ color: name ? 'rgba(0, 255, 255, 1)' : 'rgba(255, 255, 255, 1)' }}
                 />
                 {contactError && <p style={{ color: 'rgba(0, 255, 255, 1)' }}>{contactError}</p>}
@@ -133,7 +133,7 @@ const RegisterForm = () => {
                     onClick={(e) => e.stopPropagation()} 
                 />
                 <label htmlFor="agree" style={{ color: isChecked ? 'white' : 'rgba(134, 142, 150, 1)' }}></label>
-                <span style={{ color: isChecked ? 'rgba(46, 213, 213, 1)' : 'gray' }}>개인정보 수집 및 이용에 동의합니다.</span>
+                <span style={{ color: isChecked ? 'rgba(46, 213, 213, 1)' : 'gray'}}>개인정보 수집 및 이용에 동의합니다.</span>
             </div>
 
 
@@ -144,7 +144,7 @@ const RegisterForm = () => {
     
             <div className="agreeAbout" style={{ textAlign: 'center', lineHeight: '2' }}>
               <ul style={{ listStyleType: 'disc', textAlign: 'left', paddingLeft: '20px' }}>
-                <li>수집 및 목적 : 렛즈 베타 서비스 론칭 알림</li>
+                <li>수집 및 목적 : 렛즈 베타 서비스 런칭 알림</li>
                 <li>수집 항목 : 이름, 휴대전화번호</li>
                 <li>보유 및 이용 기간 : <span style={{}}>베타 서비스 론칭 후 1개월까지</span></li>
               </ul>
@@ -152,13 +152,19 @@ const RegisterForm = () => {
 
             <div className="agreeAbout" style={{ textAlign: 'center', lineHeight: '2', height:'124px', transform: 'translateY(-20px)', marginTop: '10px'}}>
               <ul style={{ listStyleType: 'disc', textAlign: 'left', paddingLeft: '20px'}}>
-                <li>귀하는 동의를 거부할 수 있습니다.&nbsp; 다만 동의를 거부할 경우 사전 알림 정보 제공이 제한됩니다.</li>
+                <li>귀하는 동의를 거부할 수 있습니다.&nbsp; 다만 동의를 거부할 경우, 알림 정보 제공이 제한됩니다.</li>
                 <li>렛즈 베타 서비스는 현재 iOS에서만 사용 가능합니다. </li>
                 <li>2월 19일 이후 앱 업데이트 후 사용해주세요.</li>
               </ul>
             </div>
 
             <button className="submitButton" type='submit'>사전 오픈 알림 신청하기</button>
+            <button className="DownloadButton" type="submit" onClick={() => window.open('https://www.naver.com', '_blank')}>
+  렛즈 소개서 다운로드
+</button>
+
+
+
         </form>
     );
 };

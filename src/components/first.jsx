@@ -91,7 +91,7 @@ const First = () => {
                         )}
                         <Lottie 
                             options={defaultOptions}
-                            style={{ position: 'absolute', top: `${top}%`, left: 0, width: '90%', height: '90%' }}
+                            style={{ position: 'absolute', top: `${top}%`, left: 0, width: '100%', height: '90%' }}
                         />
                         {isMobile && (
                             <>

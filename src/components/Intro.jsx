@@ -11,7 +11,7 @@ const Intro = () => {
                 <div className="intro__coming-soon">
                     {introText.map((intro, key) => (
                             <div key={key}>
-                            <h3>{intro.title}</h3>
+                            <h3 style={{fontWeight:"bold"}}>{intro.title}</h3>
                             <h1>{intro.subtitle}</h1>
                             <p style={{ whiteSpace: 'pre-line' }}>{intro.subbtitle}</p>
                         </div>

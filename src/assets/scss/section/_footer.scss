@@ -1,27 +1,34 @@
+* {
+    box-sizing: border-box;  /* 모든 요소에 box-sizing 적용 */
+}
+
+body {
+    overflow-x: hidden;  /* 가로 스크롤 방지 */
+}
+
 #footer {
-    height: 100%;
+    height: 60vh;
     background-color: rgba(52, 58, 64, 1);
 }
+
 .final__footer {
     width: 100%;
     height: 100%;
     color: rgba(134, 142, 150, 1);
-    
     font-size: 14px;
     font-weight: 600;
-   
-    box-sizing: border-box;
 }
 
 .final__footer__title {
-    list-style-type: disc;
     text-align: center;
 }
 
 .final__footer ul {
     padding: 0;
-    list-style-position: inside;
+    list-style-position: outside;
     text-align: left;
+    padding-left: 1em;
+    list-style-type: disc;
 }
 
 .final__footer__title h2 {
@@ -34,15 +41,21 @@
 @media (min-width: 768px) {
     .final__footer__title h2 {
         padding-left: 9rem;
-        text-align: left; 
-        padding-top: 3rem;
         padding-bottom: 1rem;
     }
 
     .final__footer ul {
         padding-left: 10rem;
-        text-align: left; 
-        list-style-type: inside;
-        
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    /* 중간 해상도에 대한 스타일을 여기에 작성하세요. */
+}
+
+@media (max-width: 480px) {
+    /* 작은 해상도에 대한 스타일을 여기에 작성하세요. */
+    .final__footer {
+        overflow-y: auto; /* 필요한 경우 세로 스크롤 허용 */
     }
 }

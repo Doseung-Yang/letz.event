@@ -1,5 +1,5 @@
 #intro {
-    height: 160vh;
+    height: 1;
 }
 
 .intro__inner {
@@ -27,14 +27,15 @@
 .intro__coming-soon h3 {
     color: rgba(0, 255, 255, 1);
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 10px;
 }
 .intro__coming-soon h1 {
     color: rgba(255, 255, 255, 1);
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 10px;
+    white-space: pre-line;
 }
 
 .intro__coming-soon p {

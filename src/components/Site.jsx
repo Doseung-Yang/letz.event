@@ -125,7 +125,9 @@ const Site = () => {
                                 </div>
                             </div>
                         </div>
-                        <h2 style={{ whiteSpace: 'pre-line', marginTop: '50px'}}>{siteText[0].Ssunabout}</h2>
+                        <button className="DownloadButton" type="submit" style={{marginTop:'3rem'}} onClick={() => window.open('https://drive.google.com/file/d/1o4tzQs7BFD27cctLRAfAs20xLFPf-KMM/view', '_blank')}>
+  렛즈 소개서 다운로드
+</button>
                         <div className='lastTitle'> {siteText[0].footer_1}</div>
                         <div style={{ display: 'flex', justifyContent: 'center', gap: '3rem', marginTop: '1rem', marginBottom: '1rem'}}>
                             <a href="#" onClick={shareKakao}>

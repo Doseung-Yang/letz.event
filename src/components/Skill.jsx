@@ -20,7 +20,7 @@ const Skill = () => {
                             <div className="fttitle">{skillText[1].fsubtitle}
                             </div>
                             <div className="fevbox">{skillText[1].feventtitle}</div>
-                            <img src={skillText[1].imageUrl} alt="description" />
+                            <img src={skillText[1].imageUrl} alt="description" style={{width:'360px', height:'170px', borderRadius:'4px'}}/>
                             <div className="fssb">{skillText[1].fssubtitle}</div>
                         </div>
                         
@@ -61,7 +61,10 @@ const Skill = () => {
                     <div className="margin_top">
                         <h1>{skillText[5].subtitle}</h1>
                         <div className="skill__dorder">
-                        <p style={{ whiteSpace: 'pre-line', fontSize: '0.9rem', color: 'rgba(205, 211, 216, 1)'}}>{skillText[5].subbtitle}</p>
+                        <p style={{ whiteSpace: 'pre-line', fontSize: '1.25rem', color: 'rgba(205, 211, 216, 1)'}}>{skillText[5].subbtitle}</p>
+                            <div className="skill__ddorder">
+                            <p style={{ whiteSpace: 'pre-line', fontSize: '0.9rem', color: 'rgba(205, 211, 216, 1)'}}>{skillText[5].subbtitle3}</p>
+                            </div>
                         </div>
                     </div>
                 
