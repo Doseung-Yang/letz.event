@@ -91,7 +91,7 @@ const First = () => {
                         )}
                         <Lottie 
                             options={defaultOptions}
-                            style={{ position: 'absolute', top: `${top}%`, left: 0, width: '100%', height: '90%' }}
+                            style={{ position: 'absolute', top: `${top}%`, left: 0, width: '90%', height: '90%' }}
                         />
                         {isMobile && (
                             <>
@@ -111,7 +111,7 @@ const First = () => {
                                 </div>
                             </>
                         )}
-                        <div style={{ position: 'absolute', top: '90%', left: '0', textAlign: 'center', width: '100%' }}>
+                        <div style={{ position: 'absolute', top: '60%', right: '20px', textAlign: 'center', width: '100%' }}>
                             <p style={{color: 'rgba(0, 255, 255, 1)', fontSize: '2rem', fontWeight: 'bold'}}>
                                 {`${timeLeft.days}일 : ${timeLeft.hours} : ${timeLeft.minutes} : ${timeLeft.seconds}`}
                             </p>
