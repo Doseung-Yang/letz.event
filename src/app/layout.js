@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         <meta property="og:url" content="https://campaign.letz.team/" />
         <meta property="og:title" content="[와디즈] 누구나 도전하고 응원받을 수 있어요" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://i.postimg.cc/280QbZ4j/1000-X1000.png" />
+        <meta property="og:image" content="https://i.postimg.cc/PxWxyhdh/1200-X630.png" />
       </head>
       <body>{children}</body>
     </html>
