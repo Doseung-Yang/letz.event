@@ -1,6 +1,10 @@
 #header {
     @include position-fixed;
     z-index: 10000;
+
+    @media (max-width: 576px){
+        display: none;
+    }
 }
 .header__inner {
     @include flex-between;

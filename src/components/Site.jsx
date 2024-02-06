@@ -14,12 +14,12 @@ const SnsIcon = styled.img`
     margin-top: 100px;
 
     @media (max-width: 768px) {
-        width: 50px;
+        width: 60px;
         margin-top: 80px;
     }
 
     @media (max-width: 480px) {
-        width: 50px;
+        width: 60px;
         margin-top: 60px;
     }
 `;
@@ -31,7 +31,7 @@ const Site = () => {
     const observerRef = useRef(null);
 
     useEffect(() => {
-        fetch('/lottie.json')
+        fetch('/movelotte.json')
             .then(response => response.json())
             .then(data => setAnimationData(data));
 
@@ -78,8 +78,8 @@ const Site = () => {
             window.Kakao.Link.sendDefault({
               objectType: 'feed',
               content: {
-                title: '[사전 오픈 알림 신청] 공유하고 가장 먼저 사용해보세요!',
-                description: '누구나 도전하고 응원받을 수 있어요',
+                title: '와디즈 응원펀딩 서비스, 렛즈',
+                description: '프리 런칭 알림 신청하고 프로모션 혜택 받으세요',
                 imageUrl: 'https://i.postimg.cc/BvTynQyG/1000-X1000.png',
                 link: {
                   mobileWebUrl: shareUrl,
@@ -107,7 +107,7 @@ const Site = () => {
                             </div>
                         }
                         <h2 style={{ whiteSpace: 'pre-line', marginTop: '50px'}}>{siteText[0].tabtitle}</h2>
-                        <div className="rolling-container" style={{ display: 'flex', position: 'relative' }} ref={observerRef}>
+                        <div className="rolling-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }} ref={observerRef}>
                             <div className='rollingSSunder'>{siteText[0].potitle2}
                                 <div style={{ position: 'absolute', right: 30, bottom: 15, fontSize: '2rem'}}>
                                     {isVisible && <CountUp end={countEndMinutes} duration={10} suffix='분'/>}

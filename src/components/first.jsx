@@ -15,12 +15,11 @@ const First = () => {
         minutes: '00',
         seconds: '00'
     });
-    
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth <= 768) {
                 setAnimationData(MOAnimationData);
-                setTop(-10);
+                setTop(-25);
                 setIsMobile(true);
             } else {
                 setAnimationData(PCAnimationData);
@@ -106,12 +105,12 @@ const First = () => {
                                         ))}
                                     </ul>
                                 </nav>
-                                <div style={{ position: 'absolute', top: '10%', left: '0', textAlign: 'center', width: '100%'}}>
+                                <div style={{ position: 'absolute', top: '3%', left: '0', textAlign: 'center', width: '100%'}}>
                                     <p style={{color: 'white', fontSize: '2rem', fontWeight: 'bold'}}>렛즈 베타 서비스 오픈</p>
                                 </div>
                             </>
                         )}
-                        <div style={{ position: 'absolute', top: '90%', left: '0', textAlign: 'center', width: '100%' }}>
+                        <div style={{ position: 'absolute', top: '78%', left: '0', textAlign: 'center', width: '100%' }}>
                             <p style={{color: 'rgba(0, 255, 255, 1)', fontSize: '2rem', fontWeight: 'bold'}}>
                                 {`${timeLeft.days}일 : ${timeLeft.hours} : ${timeLeft.minutes} : ${timeLeft.seconds}`}
                             </p>

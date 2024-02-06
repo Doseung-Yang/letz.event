@@ -7,7 +7,7 @@ body {
 }
 
 #footer {
-    height: 55vh;
+    min-height: 55vh;
     background-color: rgba(52, 58, 64, 1);
 }
 
@@ -58,7 +58,10 @@ body {
 
 @media (max-width: 480px) {
   
+    #footer {
+        min-height: 61vh;
+    }
     .final__footer {
-        height: 61vh;
+        height: 100%;
     }
 }
