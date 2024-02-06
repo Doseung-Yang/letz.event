@@ -62,7 +62,7 @@ const Site = () => {
 
     const copyToClipboard = () => {
         navigator.clipboard.writeText(shareUrl);
-        toast.success("링크가 복사되었습니다 🥰", {
+        toast.success("링크가 복사되었습니다", {
             position: "bottom-center",
             autoClose: 3000,
         });
@@ -80,7 +80,7 @@ const Site = () => {
               content: {
                 title: '[사전 오픈 알림 신청] 공유하고 가장 먼저 사용해보세요!',
                 description: '누구나 도전하고 응원받을 수 있어요',
-                imageUrl: 'https://i.postimg.cc/280QbZ4j/1000-X1000.png',
+                imageUrl: 'https://i.postimg.cc/BvTynQyG/1000-X1000.png',
                 link: {
                   mobileWebUrl: shareUrl,
                   webUrl: shareUrl,
