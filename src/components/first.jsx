@@ -19,7 +19,7 @@ const First = () => {
         const handleResize = () => {
             if (window.innerWidth <= 768) {
                 setAnimationData(MOAnimationData);
-                setTop(-25);
+                setTop(-15);
                 setIsMobile(true);
             } else {
                 setAnimationData(PCAnimationData);
