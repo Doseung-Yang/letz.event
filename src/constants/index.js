@@ -1,7 +1,7 @@
 
 export const headerNav = [
     {
-        title: "comming-soon",
+        title: "coming-soon",
         url: "#intro"
     },
     {
@@ -41,7 +41,7 @@ export const skillText = [
     },
     {
         ftitle1: "혜택 1",
-        fsubtitle: "공간 와디즈 B1층 전시 공간\n 일주일 무료 대관",
+        fsubtitle: "성수동 공간 와디즈 지하 전시공간\n 일주일 무료 대관",
         feventtitle: "2000만원 상당",
         fssubtitle: "최우수 프로젝트 1팀 선정",
         imageUrl: "/GongganWadiz1.png"
@@ -56,14 +56,14 @@ export const skillText = [
     },
     {
         ftitle3: "혜택 3",
-        fsubtitle2: "와디즈 오피셜 인스타그램 콘텐츠 게재",
+        fsubtitle2: "와디즈 오피셜 인스타그램\n 콘텐츠 게재",
         feventitle1: "스토리",
         feventitle2: "하이라이트",
         fssubtitle1: "우수 프로젝트 20팀 선정"
     },
     {
         ftitle3: "혜택 4",
-        fsubtitle2: "프로젝트 홍보용 렛즈 홈 배너 지원",
+        fsubtitle2: "프로젝트 홍보용\n 렛즈 홈 배너 지원",
         feventitle1: "상단 배너",
         feventitle2: "추천 영역",
         fssubtitle1: "우수 프로젝트 10팀 선정"
@@ -103,7 +103,7 @@ export const siteText = [
         Ssunder2: "도전을 응원할 수 있는\n멤버들",
         Ssunabout: "지금, 렛즈에서 바로 도전하세요",
         tabtitle: "하고 싶었던 것, 그게 무엇이든\n분야에 상관없이 도전할 수 있어요",
-        footer_1: "친구에게 공유하고\n렛즈 베타 서비스를 가장 먼저사용해보세요",
+        footer_1: "공유하고\n친구랑 가장 먼저 사용하세요",
     },
 ];
 

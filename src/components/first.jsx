@@ -15,17 +15,40 @@ const First = () => {
         minutes: '00',
         seconds: '00'
     });
+    const [height, setheight] = useState('100%');
+
+
     useEffect(() => {
         const handleResize = () => {
+
+            if (window.innerWidth <= 1920) {
+                setAnimationData(PCAnimationData);
+                setTop(0);
+                setIsMobile(false);
+            }
             if (window.innerWidth <= 768) {
                 setAnimationData(MOAnimationData);
-                setTop(-15);
+                setTop(5);
                 setIsMobile(true);
             } else {
                 setAnimationData(PCAnimationData);
                 setTop(0);
                 setIsMobile(false);
             }
+
+          
+             if (window.innerWidth <= 400) {
+                setheight('25%');  
+            } else if (window.innerWidth <= 800) {
+                setheight('30%');  
+            } else if (window.innerWidth <= 1440) {
+                setheight('82%');  // 800px 초과, 1440px 이하 해상도에서 적용할 width 값
+            } else if (window.innerWidth <= 1920) {
+                setheight('76%');  // 1440px 초과, 1920px 이하 해상도에서 적용할 width 값
+            } else {
+                setheight('64%');  // 1920px 초과 해상도에서 적용할 width 값
+            }
+        
         };
 
         window.addEventListener('resize', handleResize);
@@ -78,6 +101,7 @@ const First = () => {
         document.querySelector(url).scrollIntoView({ behavior: 'smooth' });
     }
 
+    
     return (
         <>
             <section id="first">
@@ -89,8 +113,8 @@ const First = () => {
                             </div>
                         )}
                         <Lottie 
-                            options={defaultOptions}
-                            style={{ position: 'absolute', top: `${top}%`, left: 0, width: '100%', height: '90%' }}
+                            options={defaultOptions} className="first__header__animation"
+                            style={{ position: 'absolute', top: `${top}%`, left: 0, width: '100%', height: `${height}` }}
                         />
                         {isMobile && (
                             <>
@@ -105,12 +129,12 @@ const First = () => {
                                         ))}
                                     </ul>
                                 </nav>
-                                <div style={{ position: 'absolute', top: '3%', left: '0', textAlign: 'center', width: '100%'}}>
-                                    <p style={{color: 'white', fontSize: '2rem', fontWeight: 'bold'}}>렛즈 베타 서비스 오픈</p>
+                                <div className="mov_title" style={{ position: 'absolute', top: '15%', left: '0', textAlign: 'center', width: '100%'}}>
+                                    <p style={{color: 'white', fontSize: '1.5rem', fontWeight: 'bold'}}>렛즈 베타 서비스 오픈</p>
                                 </div>
                             </>
                         )}
-                        <div style={{ position: 'absolute', top: '78%', left: '0', textAlign: 'center', width: '100%' }}>
+                        <div className="must__day">
                             <p style={{color: 'rgba(0, 255, 255, 1)', fontSize: '2rem', fontWeight: 'bold'}}>
                                 {`${timeLeft.days}일 : ${timeLeft.hours} : ${timeLeft.minutes} : ${timeLeft.seconds}`}
                             </p>

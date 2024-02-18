@@ -10,7 +10,7 @@ export default async function handler(req, res) {
     return res.status(405).end(); // Method Not Allowed
   }
 
-  const { name, contact } = req.body;
+  const { name, contact, timestamp } = req.body;  // Here we get the timestamp from the client
 
   try {
     const response = await googleSheet.spreadsheets.values.get({
@@ -33,10 +33,10 @@ export default async function handler(req, res) {
 
     await googleSheet.spreadsheets.values.append({
       spreadsheetId: '1X5enVSDX9eXq6L6jymJwPvhDemNwNm972CQu1WA67mI',
-      range: 'A:B',
+      range: 'A:C',
       valueInputOption: 'USER_ENTERED',
       resource: {
-        values: [[name, contact]],
+        values: [[name, contact, timestamp]],
       },
     });
 

@@ -25,7 +25,7 @@ const Skill = () => {
                         </div>
                         
 
-                        <div className="skill__porder">
+                        <div className="skill__porder1">
                             <div className="ftbox">{skillText[2].ftitle2}</div>
                             <div className="fttitle">{skillText[2].fsubtitle2}</div>
                         <div className="fevboxs-container">
@@ -72,10 +72,10 @@ const Skill = () => {
                     <div className="margin_top">
                         <h1>{skillText[6].subtitle}</h1>
                         <div className="skill__qorder">
-                            <div className="pop">{skillText[6].number}</div>
-                        <p style={{ whiteSpace: 'pre-line', fontSize: '0.9rem', color: 'rgba(205, 211, 216, 1)', marginBottom: '0.8rem', marginTop: '0.5rem'}}>{skillText[6].subbtitle}</p>
-                        <div className="pop">{skillText[6].number1}</div>
-                        <p style={{ whiteSpace: 'pre-line', fontSize: '0.9rem', color: 'rgba(205, 211, 216, 1)', marginTop: '0.5rem'}}>{skillText[6].subbtitle1}</p>
+                            <div className="pop3">{skillText[6].number}</div>
+                        <p style={{ whiteSpace: 'pre-line', fontSize: '1.2rem', color: 'rgba(205, 211, 216, 1)', marginBottom: '0.8rem', marginTop: '0.5rem'}}>{skillText[6].subbtitle}</p>
+                        <div className="pop3">{skillText[6].number1}</div>
+                        <p style={{ whiteSpace: 'pre-line', fontSize: '1.2rem', color: 'rgba(205, 211, 216, 1)', marginTop: '0.5rem'}}>{skillText[6].subbtitle1}</p>
                         </div>
                     </div>
 

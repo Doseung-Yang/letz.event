@@ -53,11 +53,15 @@
     }
 
     @media (max-width: 768px) {
-        position: fixed;  
-        bottom: 0;  
-        left: 0;  
+        position: fixed;
+        width: calc(100% - 2rem);  
+        bottom: 2.31rem;  
+        left: 1rem;  /* 추가된 부분 */
+        right: 1rem;  /* 추가된 부분 */
+         
         max-width: 100%;  
         z-index: 9999;
+
     }
 }
 
@@ -90,11 +94,11 @@
 .agreeCheckbox {
   display: flex;
   align-items: center;
-  width: 100%;
   max-width: 420px;
   height: 56px;
   border-radius: 4px;
   padding: 0 16px;
+  line-height: 22px;
   gap: 8px;
   font-size: 18px;
   font-weight: 500;
@@ -108,7 +112,7 @@
     display: inline-block;
     width: 20px;
     height: 20px;
-    margin-right: 10px;
+    
     border: 2px solid gray;
     border-radius: 50%;
     background-color: rgba(134, 142, 150, 1);
@@ -144,10 +148,10 @@
   font-size: 14px;
   font-family: 'Pretendard';
   padding-left: 10px;
-  margin-top: 10px;
+  margin-top: 5px;
   font-weight: 600;
   vertical-align: middle;
-  margin-bottom: 2.1em;
+  margin-bottom: 25px;
 
   @media (max-width: 768px) {
     width: calc(100% - 20px);

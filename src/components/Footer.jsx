@@ -6,8 +6,8 @@ const Footer = () => {
         <section id="footer">
         <div className="final__footer">
             <div className='final__footer__title'>
-                <h2 style={{paddingBottom:'1rem', paddingLeft: '2rem'}}>NOTICE</h2>
-                <ul style={{paddingBottom: '5rem', paddingLeft: '2rem'}}>
+                <h2 style={{}}>NOTICE</h2>
+                <ul style={{}}>
                     <li>프리 런칭 알림 신청 시 안내 등 혜택/정보 수신에 동의하신 것으로 간주됩니다.</li>
                     <li>2024년 2월 19일부터 2월 25일 23시 59분까지 오픈한 프로젝트만 혜택이 적용됩니다.</li>
                     <li>일부 공개가 아닌 전체 공개로 오픈한 프로젝트만 혜택이 적용됩니다.</li>

@@ -37,8 +37,8 @@ const Header = () => {
                     <Image
                         src={LetzLogo}
                         alt="Letz Logo" 
-                        width={66} 
-                        height={20}
+                        width={67.32} 
+                        height={17.79}
                     />
                     </a>
                 </div>
@@ -54,7 +54,7 @@ const Header = () => {
                                 <a 
                                     href={nav.url} 
                                     onClick={(e) => handleClick(e, nav.url)} 
-                                    style={activeLink === nav.url ? { color: 'rgba(0, 255, 255, 1)' } : {}}
+                                    style={activeLink === nav.url ? { color: 'rgba(0, 255, 255, 1)', fontWeight:'bold' } : {}}
                                 >
                                     {nav.title}
                                 </a>

@@ -133,15 +133,8 @@ const RegisterForm = () => {
                     onClick={(e) => e.stopPropagation()} 
                 />
                 <label htmlFor="agree" style={{ color: isChecked ? 'white' : 'rgba(134, 142, 150, 1)' }}></label>
-                <span style={{ color: isChecked ? 'rgba(46, 213, 213, 1)' : 'gray'}}>개인정보 수집 및 이용에 동의합니다.</span>
+                <span style={{ color: isChecked ? 'rgba(46, 213, 213, 1)' : 'rgba(134, 142, 150, 1)'}}>개인정보 수집 및 이용에 동의합니다.</span>
             </div>
-
-
-
-
-
-
-    
             <div className="agreeAbout" style={{ textAlign: 'center', lineHeight: '2' }}>
               <ul style={{ listStyleType: 'disc', textAlign: 'left', paddingLeft: '20px' }}>
                 <li>수집 및 목적 : 렛즈 베타 서비스 런칭 알림</li>
@@ -149,7 +142,6 @@ const RegisterForm = () => {
                 <li>보유 및 이용 기간 : <span style={{}}>베타 서비스 론칭 후 1개월까지</span></li>
               </ul>
             </div>
-
             <div className="agreeAbout" style={{ textAlign: 'center', lineHeight: '2', height:'124px', transform: 'translateY(-20px)', marginTop: '10px'}}>
               <ul style={{ listStyleType: 'disc', textAlign: 'left', paddingLeft: '20px'}}>
                 <li>귀하는 동의를 거부할 수 있습니다.&nbsp; 다만 동의를 거부할 경우, 알림 정보 제공이 제한됩니다.</li>
@@ -158,7 +150,7 @@ const RegisterForm = () => {
               </ul>
             </div>
 
-            <button className="submitButton" type='submit'>사전 오픈 알림 신청하기</button>
+            <button className="submitButton" type='submit'>프리 런칭 알림 신청하기</button>
             <button className="DownloadButton" type="submit" onClick={() => window.open('https://drive.google.com/file/d/1o4tzQs7BFD27cctLRAfAs20xLFPf-KMM/view', '_blank')}>
   렛즈 소개서 다운로드
 </button>

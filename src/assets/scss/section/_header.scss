@@ -1,15 +1,71 @@
 #header {
     @include position-fixed;
     z-index: 10000;
+    height: 64px;
+}
+
+@media (min-width: 1920px){
+    #header {
+        width: 1920px;
+        height: 64px;
+    }
+    .header__inner {
+        @include flex-between;
+        background-color:rgba(20, 24, 30, 0.75);
+        width: 1920px;
+        height: 64px;
+        justify-content: space-between;
+        padding: 0px,80px,8px,80px;
+    
+        .header__logo {
+            font-size: 0.9rem;
+            text-align: center;
+            line-height: 1;
+        
+        }
+        .letz_logo {
+            margin: 0 3rem;
+        }
+
+        @media (min-width: 1440px){
+            #header {
+                width: 1440px;
+                height: 64px;
+            }
+            .header__inner {
+                @include flex-between;
+                background-color:rgba(20, 24, 30, 0.75);
+                width: 1440px;
+                height: 64px;
+                justify-content: space-between;
+                padding: 0px,80px,8px,80px;
+            
+                .header__logo {
+                    font-size: 0.9rem;
+                    text-align: center;
+                    line-height: 1;
+                
+                }
+                .letz_logo {
+                    margin: 0 1rem;
+                }
 
     @media (max-width: 576px){
-        display: none;
+        .header__logo {
+            font-size: 0.5rem;
+            text-align: center;
+            line-height: 1;
+        }
     }
 }
+    }
+    }
+}
+
+
 .header__inner {
     @include flex-between;
     background-color:rgba(20, 24, 30, 0.75);
-    backdrop-filter: blur(15px);
     padding: 1rem;
 
     .header__logo {
@@ -19,14 +75,13 @@
     
     }
     .letz_logo {
-        margin: 0 1rem;
+        margin: 0 3rem;
     }
     
     .header__nav {
         margin: 0 1rem;
         @media (max-width: 800px){
             display: none;
-
         }
         
         li {
@@ -34,20 +89,20 @@
 
             a {
                 font-size: 16px;
-                padding: 22px;
+                padding: 0px;
                 margin-right: 3rem;
                 color: rgba(134, 142, 150, 1);
                 position: relative;
                 font-weight: bold;
-    
+            
                 &::before {
                     content: '';
-                    width: calc(100% - 28px);
+                    width: calc(100% - 0px); // 밑줄 길이 조정, 필요에 따라 0px 값을 조절
                     height: 1px;
                     background-color: #00FFFF;
                     position: absolute;
-                    left: 14px;
-                    bottom: 10px;
+                    left: 0; // 왼쪽 끝부터 시작
+                    top: 40px;
                     transform: scaleX(0);
                     transition: all 0.3s;
                 }
@@ -55,6 +110,8 @@
                     transform: scaleX(1);
                 }
             }
+            
+            
         }
     }
     
