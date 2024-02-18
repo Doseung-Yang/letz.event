@@ -38,9 +38,9 @@ const First = () => {
 
           
              if (window.innerWidth <= 400) {
-                setheight('60%');  
+                setheight('70%');  
             } else if (window.innerWidth <= 800) {
-                setheight('60%');  
+                setheight('70%');  
             } else if (window.innerWidth <= 1440) {
                 setheight('82%');  
             } else if (window.innerWidth <= 1920) {
