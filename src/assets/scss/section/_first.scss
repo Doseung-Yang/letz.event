@@ -90,15 +90,16 @@
 @media (max-width: 768px) {
     .letz_image {
         position: relative;
-        width: 400px;
-        height: 19vh;
+        width: 320px;
+        height: 25vh;
         bottom: 1rem;
         background-size: cover;
         background-position: center;
-        transform: translateY(-110px);
+        transform: translateY(90px);
+        
     } 
     .must__day {
-        top: 78%;
+        top: 75%;
         left: 0;
         text-align: center;
         width: 100%;

@@ -28,7 +28,7 @@ const First = () => {
             }
             if (window.innerWidth <= 768) {
                 setAnimationData(MOAnimationData);
-                setTop(5);
+                setTop(1);
                 setIsMobile(true);
             } else {
                 setAnimationData(PCAnimationData);
@@ -38,15 +38,15 @@ const First = () => {
 
           
              if (window.innerWidth <= 400) {
-                setheight('25%');  
+                setheight('60%');  
             } else if (window.innerWidth <= 800) {
-                setheight('30%');  
+                setheight('60%');  
             } else if (window.innerWidth <= 1440) {
-                setheight('82%');  // 800px 초과, 1440px 이하 해상도에서 적용할 width 값
+                setheight('82%');  
             } else if (window.innerWidth <= 1920) {
-                setheight('76%');  // 1440px 초과, 1920px 이하 해상도에서 적용할 width 값
+                setheight('76%'); 
             } else {
-                setheight('64%');  // 1920px 초과 해상도에서 적용할 width 값
+                setheight('64%'); 
             }
         
         };
