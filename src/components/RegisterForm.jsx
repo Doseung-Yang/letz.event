@@ -157,7 +157,7 @@ const RegisterForm = () => {
             window.open('letz://open', '_blank');
         } else {
             // iOS가 아닐 경우 토스트 메시지 출력
-            toast.error('현재 지원하지 않는 기기입니다.');
+            toast.error('렛즈 베타 서비스는 현재 iOS에서만 사용 가능합니다. 추후 안드로이드 OS도 런칭 예정입니다.');
         }
     }}
 >프리 런칭 이벤트 참여하기</button>
