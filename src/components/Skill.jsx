@@ -21,7 +21,7 @@ const Skill = () => {
                             </div>
                             <div className="fevbox">{skillText[1].feventtitle}</div>
                             <img src={skillText[1].imageUrl} alt="description" style={{width:'360px', height:'170px', borderRadius:'4px'}}/>
-                            <div className="fssb">{skillText[1].fssubtitle}</div>
+                            <div className="fssb" style={{marginBottom:'15px'}}>{skillText[1].fssubtitle}</div>
                         </div>
                         
 
@@ -33,7 +33,7 @@ const Skill = () => {
                             <div className="fevboxs">{skillText[2].feventitle2}</div>
                             <div className="fevboxs">{skillText[2].feventitle3}</div>
                             </div>
-                            <div className="fssb">{skillText[2].fssubtitle1}</div>
+                            <div className="fssb" style={{marginTop:'3px'}}>{skillText[2].fssubtitle1}</div>
                         </div>
 
 
@@ -61,21 +61,19 @@ const Skill = () => {
                     <div className="margin_top">
                         <h1>{skillText[5].subtitle}</h1>
                         <div className="skill__dorder">
-                        <p style={{ whiteSpace: 'pre-line', fontSize: '1.25rem', color: 'rgba(205, 211, 216, 1)'}}>{skillText[5].subbtitle}</p>
+                        <p style={{ whiteSpace: 'pre-line', fontSize: '1rem', color: 'rgba(205, 211, 216, 1)'}}>{skillText[5].subbtitle}</p>
                             <div className="skill__ddorder">
                             <p style={{ whiteSpace: 'pre-line', fontSize: '0.9rem', color: 'rgba(205, 211, 216, 1)'}}>{skillText[5].subbtitle3}</p>
                             </div>
                         </div>
                     </div>
-                
-
                     <div className="margin_top">
                         <h1>{skillText[6].subtitle}</h1>
                         <div className="skill__qorder">
                             <div className="pop3">{skillText[6].number}</div>
-                        <p style={{ whiteSpace: 'pre-line', fontSize: '1.2rem', color: 'rgba(205, 211, 216, 1)', marginBottom: '0.8rem', marginTop: '0.5rem'}}>{skillText[6].subbtitle}</p>
+                        <p style={{ whiteSpace: 'pre-line', fontSize: '1rem', color: 'rgba(205, 211, 216, 1)', marginBottom: '0.8rem', marginTop: '0.5rem'}}>{skillText[6].subbtitle}</p>
                         <div className="pop3">{skillText[6].number1}</div>
-                        <p style={{ whiteSpace: 'pre-line', fontSize: '1.2rem', color: 'rgba(205, 211, 216, 1)', marginTop: '0.5rem'}}>{skillText[6].subbtitle1}</p>
+                        <p style={{ whiteSpace: 'pre-line', fontSize: '1rem', color: 'rgba(205, 211, 216, 1)', marginTop: '0.5rem'}}>{skillText[6].subbtitle1}</p>
                         </div>
                     </div>
 

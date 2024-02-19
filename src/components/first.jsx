@@ -133,8 +133,8 @@ const First = () => {
                                         ))}
                                     </ul>
                                 </nav>
-                                <div className="mov_title" style={{ position: 'absolute', top: '12%', left: '0', textAlign: 'center', width: '100%'}}>
-                                    <p style={{color: 'white', fontSize: '1.5rem', fontWeight: 'bold'}}>렛즈 베타 서비스 런칭</p>
+                                <div className="mov_title" style={{ position: 'absolute', top: '10%', left: '0', textAlign: 'center', width: '100%'}}>
+                                    <p style={{color: 'white', fontSize: '1.8rem', fontWeight: 'bold'}}>렛즈 베타 서비스 런칭</p>
                                 </div>
                             </>
                         )}

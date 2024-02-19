@@ -90,7 +90,7 @@ export const skillText = [
 export const siteText = [
     {
         title: "about Letz",
-        subtitle: "누구나 도전하고 응원하는 세상,\n 렛즈가 함께합니다",
+        subtitle: "누구나 도전하고\n 응원하는 세상,\n 렛즈가 함께합니다",
         subbtitle: "해볼까? 고민했던 다양한 생각과 도전, 무엇이든 좋습니다\n지금 바로 렛즈에서 시작해보세요",
         potitle: "리더에게 온전히 전하는\n 프로젝트 응원금",
         potitle1: "0%",
@@ -102,8 +102,8 @@ export const siteText = [
         Ssunder1: "프로젝트 오픈까지\n필요한 시간",
         Ssunder2: "도전을 응원할 수 있는\n멤버들",
         Ssunabout: "지금, 렛즈에서 바로 도전하세요",
-        tabtitle: "하고 싶었던 것, 그게 무엇이든\n분야에 상관없이 도전할 수 있어요",
-        footer_1: "공유하고\n친구랑 가장 먼저 사용하세요",
+        tabtitle: "해볼까? 고민했던 다양한 생각과 도전, 무엇이든 좋습니다\n지금 바로 렛즈에서 시작해보세요",
+        footer_1: "친구에게 공유하고\n렛즈 베타 서비스\n가장 먼저 사용해보세요",
     },
 ];
 

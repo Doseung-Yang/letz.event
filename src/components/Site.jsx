@@ -98,14 +98,14 @@ const Site = () => {
                         <h3>{siteText[0].title}</h3>
                         <h1 style={{ whiteSpace: 'pre-line'}}>{siteText[0].subtitle}</h1> 
                         {animationData && 
-                            <div style={{ position: 'relative', width: '1600px', height: '230px',alignSelf: 'center' }}>
-                                <Lottie 
-                                    animationData={animationData} 
-                                    style={{ position: 'absolute', width: '100%', height: '100%'}}
-                                    preserveAspectRatio="xMidYMid meet"
-                                />
-                            </div>
-                        }
+    <div style={{ position: 'relative', minWidth: '1600px', maxWidth: '1764px', width: '100%', height: '160px', alignSelf: 'center' }}>
+        <Lottie 
+            animationData={animationData} 
+            style={{ position: 'absolute', width: '100%', height: '100%'}}
+            preserveAspectRatio="xMidYMid meet"
+        />
+    </div>
+}
                         <h2 style={{ whiteSpace: 'pre-line', marginTop: '50px'}}>{siteText[0].tabtitle}</h2>
                         <div className="rolling-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }} ref={observerRef}>
                             <div className='rollingSSunder'>{siteText[0].potitle2}
