@@ -44,7 +44,7 @@ const RegisterForm = () => {
         e.preventDefault();
 
         if (!isChecked) {
-            toast.error('사전 혜택 안내를 위해 개인정보 수집 및 이용에 동의해주세요.');
+            toast.error('사전 혜택 안내를 위해 개인정보 수집 및 이용에 동의해주세요.', { duration: 3000 });
             return;
         }
 
@@ -77,7 +77,7 @@ const RegisterForm = () => {
 
         if (!res.ok) {
             if (res.status === 400 && data.message === '이미 등록된 사용자입니다.') {
-                toast.error('이미 사전 알림에 신청된 사용자입니다.');
+                toast.error('이미 사전 알림에 신청된 사용자입니다.', { duration: 3000 });
             } else {
                 console.error(data);
             }
@@ -157,7 +157,7 @@ const RegisterForm = () => {
             window.open('letz://open', '_blank');
         } else {
             // iOS가 아닐 경우 토스트 메시지 출력
-            toast.error('렛즈 베타 서비스는 현재 iOS에서만 사용 가능합니다. 추후 안드로이드 OS도 런칭 예정입니다.');
+            toast.error('렛즈 베타 서비스는 현재 iOS에서만 사용 가능합니다. 추후 안드로이드 OS도 런칭 예정입니다.', { duration: 3000 });
         }
     }}
 >프리 런칭 이벤트 참여하기</button>
