@@ -38,7 +38,7 @@
                 width: 1440px;
                 height: 64px;
                 justify-content: space-between;
-                padding: 0px,80px,8px,80px;
+                padding: 0px 80px 8px 80px;
             
                 .header__logo {
                     font-size: 0.9rem;
@@ -124,6 +124,9 @@
         @media (max-width: 800px){
             padding: 10px;
             margin-right: 1rem;
+        }
+        .letz_logo {
+            margin: 0 2rem;
         }
 
         span {
