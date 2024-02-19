@@ -1,6 +1,7 @@
 #site {
     height: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
+
 }
 
 .site__inner {
@@ -33,9 +34,7 @@
     .site__inner {
         padding: 200px 0;
     }
-    .site__wrap {
-        width: 420px;
-    }
+    
     .site__wrap > div > div, .rolling-container {
         flex-direction: row;
         justify-content: center; 

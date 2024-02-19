@@ -153,13 +153,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: -4rem;
+    margin-left: -1rem;
 
     @media (max-width: 768px) {
         width: calc(100% - 20px);
         margin-left: 10px;  
         margin-right: 10px;
     }
+    .skill__special {
+            margin-top: 3rem;
+            margin-left: 0rem;
+        }
 }
 
 
@@ -223,7 +227,11 @@
     border-radius: 4px;
 
     @media screen and (max-width: 400px) {
-        width: 100%;
+        width: 100%;        
+    }
+    .skill__special {
+        margin-top: 3rem;
+        margin-left: 0rem;
     }
 }
 
@@ -264,5 +272,11 @@
 
 .skill__special {
     margin-top: 3rem;
-    margin-left: -1rem;
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    .skill__special {
+        margin-left: -1rem;
+    }
 }

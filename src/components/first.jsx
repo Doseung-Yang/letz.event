@@ -38,15 +38,15 @@ const First = () => {
 
           
              if (window.innerWidth <= 400) {
-                setheight('73%');  
+                setheight('72%');  
             } else if (window.innerWidth <= 800) {
-                setheight('73%');  
+                setheight('72%');  
             } else if (window.innerWidth <= 1440) {
                 setheight('82%');  
             } else if (window.innerWidth <= 1920) {
                 setheight('76%'); 
             } else {
-                setheight('73%'); 
+                setheight('72%'); 
             }
         
         };
