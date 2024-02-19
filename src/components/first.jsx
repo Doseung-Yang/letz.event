@@ -29,7 +29,7 @@ const First = () => {
             }
             if (window.innerWidth <= 768) {
                 setAnimationData(MOAnimationData);
-                setTop(1);
+                setTop(0);
                 setIsMobile(true);
             } else {
                 setAnimationData(PCAnimationData);

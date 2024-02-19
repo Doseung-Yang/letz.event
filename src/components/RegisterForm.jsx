@@ -70,7 +70,7 @@ const RegisterForm = () => {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ name, contact }),
+            body: JSON.stringify({ name, contact,  timestamp: new Date().toISOString() }),
         });
 
         const data = await res.json();
