@@ -28,7 +28,7 @@ export const introText = [
         subtitle: "렛즈 베타 서비스\n런칭 알림 신청",
     },
     {
-        subbtitle: "사전 오픈 알림 신청하고 \n오픈 프로모션 혜택 받으세요"
+        subbtitle: "렛즈 베타 서비스는 현재\n iOS에서만 사용 가능합니다.\n 추후 안드로이드 OS도 런칭 예정입니다."
     }
 
 ]
