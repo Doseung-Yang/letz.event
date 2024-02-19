@@ -160,12 +160,12 @@ const RegisterForm = () => {
             toast.error('현재 지원하지 않는 기기입니다.');
         }
     }}
->베타 서비스 알림 신청하기</button>
+>프리 런칭 이벤트 참여하기</button>
         <button className="DownloadButton" type="submit" onClick={() => window.open('https://drive.google.com/file/d/1o4tzQs7BFD27cctLRAfAs20xLFPf-KMM/view', '_blank')}>
   렛즈 소개서 다운로드
         </button>
         <button className="letzButton" type='submit'>
-            프리 런칭 이벤트 참여하기
+        베타 서비스 알림 신청하기
             
         </button> 
                 </form>

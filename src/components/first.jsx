@@ -46,7 +46,7 @@ const First = () => {
             } else if (window.innerWidth <= 1920) {
                 setheight('76%'); 
             } else {
-                setheight('64%'); 
+                setheight('70%'); 
             }
         
         };
