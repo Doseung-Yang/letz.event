@@ -107,7 +107,7 @@
     .first__nav {
         display: block;
         width: 100%;
-        background-color: #f8f9fa; 
+        background-color: rgba(20, 24, 30, 1); 
         border-top: 1px solid #dee2e6; 
         box-sizing: border-box; 
         padding: 1rem 0;
@@ -141,4 +141,22 @@
 
 body {
     overflow-x: hidden;
+}
+
+@media (min-width: 769px) {
+    .first__nav-mobile {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .first__nav-mobile {
+        display: none;
+    }
+    .first__nav-mobile.sticky {
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
 }

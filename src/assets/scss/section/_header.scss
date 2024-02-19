@@ -3,7 +3,6 @@
     z-index: 10000;
     height: 64px;
 }
-
 @media (min-width: 1920px){
     #header {
         width: 1920px;
@@ -16,17 +15,14 @@
         height: 64px;
         justify-content: space-between;
         padding: 0px,80px,8px,80px;
-    
         .header__logo {
             font-size: 0.9rem;
             text-align: center;
             line-height: 1;
-        
         }
         .letz_logo {
             margin: 0 1rem;
         }
-
         @media (min-width: 1440px){
             #header {
                 width: 1440px;
@@ -44,12 +40,10 @@
                     font-size: 0.9rem;
                     text-align: center;
                     line-height: 1;
-                
                 }
                 .letz_logo {
                     margin: 0 1rem;
                 }
-
     @media (max-width: 576px){
         .header__logo {
             font-size: 0.5rem;
@@ -61,8 +55,6 @@
     }
     }
 }
-
-
 .header__inner {
     @include flex-between;
     background-color:rgba(20, 24, 30, 0.75);
@@ -72,7 +64,6 @@
         font-size: 0.9rem;
         text-align: center;
         line-height: 1;
-    
     }
     .letz_logo {
         margin: 0 1rem;
@@ -83,10 +74,8 @@
         @media (max-width: 800px){
             display: none;
         }
-        
         li {
             display: inline;
-
             a {
                 font-size: 16px;
                 padding: 0px;
@@ -114,7 +103,6 @@
             
         }
     }
-    
     .header__nav__mobile {
         display: none;
         width: 40px;
@@ -160,3 +148,16 @@
         }
     }
 } 
+
+@media (max-width: 768px) {
+    .first__nav-mobile {
+        display: none;
+    }
+    .first__nav-mobile.sticky {
+        display: block;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
+}

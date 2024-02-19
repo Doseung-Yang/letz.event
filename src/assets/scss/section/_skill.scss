@@ -277,6 +277,12 @@
 
 @media (min-width: 768px) {
     .skill__special {
-        margin-left: -1rem;
+        margin-left: 0;
+    }
+    .skill__dorder {
+        margin-left: 0;
+    }
+    .skill__qorder {
+        margin-left: 0;
     }
 }

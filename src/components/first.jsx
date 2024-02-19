@@ -39,9 +39,9 @@ const First = () => {
 
           
              if (window.innerWidth <= 400) {
-                setheight('75%');  
+                setheight('70%');  
             } else if (window.innerWidth <= 800) {
-                setheight('75%');
+                setheight('70%');
             } else if (window.innerWidth <= 1440) {
                 setheight('82%');  
                 setWith('100%')
@@ -148,7 +148,7 @@ const First = () => {
                 </div>
             </section>
             {isMobile && (
-                <nav className="first__nav" role="navigation" aria-label="푸터 메뉴" style={{ backgroundColor: 'rgba(20, 24, 30, 1)'}}>
+                <nav className="first__nav" role="navigation" aria-label="푸터 메뉴" style={{ backgroundColor: ''}}>
                     <ul style={{}}>
                         {['#intro', '#skill', '#site'].map((nav, key) => (
                             <li key={key}>
