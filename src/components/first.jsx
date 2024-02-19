@@ -38,9 +38,9 @@ const First = () => {
 
           
              if (window.innerWidth <= 400) {
-                setheight('70%');  
+                setheight('67%');  
             } else if (window.innerWidth <= 800) {
-                setheight('70%');  
+                setheight('67%');  
             } else if (window.innerWidth <= 1440) {
                 setheight('82%');  
             } else if (window.innerWidth <= 1920) {
@@ -129,7 +129,7 @@ const First = () => {
                                         ))}
                                     </ul>
                                 </nav>
-                                <div className="mov_title" style={{ position: 'absolute', top: '15%', left: '0', textAlign: 'center', width: '100%'}}>
+                                <div className="mov_title" style={{ position: 'absolute', top: '12%', left: '0', textAlign: 'center', width: '100%'}}>
                                     <p style={{color: 'white', fontSize: '1.5rem', fontWeight: 'bold'}}>렛즈 베타 서비스 오픈</p>
                                 </div>
                             </>
