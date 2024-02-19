@@ -4,6 +4,7 @@ import PCAnimationData from '../assets/img/PC.json';
 import MOAnimationData from '../assets/img/MO.json';
 import '@/assets/scss/section/_first.scss';
 import {firstText, headerNav} from "@/constants";
+import { setWith } from 'lodash';
 
 const First = () => {
     const [animationData, setAnimationData] = useState(PCAnimationData);
@@ -38,15 +39,19 @@ const First = () => {
 
           
              if (window.innerWidth <= 400) {
-                setheight('72%');  
+                setheight('70%');  
             } else if (window.innerWidth <= 800) {
-                setheight('72%');  
+                setheight('70%');
+                setWith('70%');
             } else if (window.innerWidth <= 1440) {
                 setheight('82%');  
+                setWith('100%')
             } else if (window.innerWidth <= 1920) {
                 setheight('76%'); 
+                setWith('100%');
             } else {
-                setheight('72%'); 
+                setheight('70%'); 
+                setWith('100%');
             }
         
         };
