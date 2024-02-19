@@ -40,14 +40,11 @@ const Site = () => {
             setScrollY(currentScrollY);
         };
         window.addEventListener('scroll', handleScroll);
-
         const observer = new IntersectionObserver((entries) => {
             setIsVisible(entries[0].isIntersecting);
         }, { threshold: 0.1 });
         observer.observe(observerRef.current);
-
         window.Kakao.init('d6083900c37df8a978428436731dc0bc'); 
-
         return () => {
             window.removeEventListener('scroll', handleScroll);
             observer.disconnect();

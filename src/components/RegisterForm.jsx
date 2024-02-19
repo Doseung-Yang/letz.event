@@ -139,7 +139,7 @@ const RegisterForm = () => {
               <ul style={{ listStyleType: 'disc', textAlign: 'left', paddingLeft: '20px' }}>
                 <li>수집 및 목적 : 렛즈 베타 서비스 런칭 알림</li>
                 <li>수집 항목 : 이름, 휴대전화번호</li>
-                <li>보유 및 이용 기간 : <span style={{fontWeight:'bold'}}>베타 서비스 론칭 후 1개월까지</span></li>
+                <li>보유 및 이용 기간 : <span style={{fontWeight:'800'}}>베타 서비스 론칭 후 1개월까지</span></li>
               </ul>
             </div>
             <div className="agreeAbout" style={{ textAlign: 'center', lineHeight: '2', height:'124px', transform: 'translateY(-20px)', marginTop: '10px'}}>

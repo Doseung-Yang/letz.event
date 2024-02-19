@@ -11,6 +11,9 @@
 .first__header {
     width: 1660px;
     height: 440px;
+.header.hidden {
+        visibility: hidden;
+    }
 }
 .first__header__title {
     display: flex;
@@ -149,14 +152,12 @@ body {
     }
 }
 @media (max-width: 768px) {
-    .first__nav-mobile {
-        display: none;
-    }
-    .first__nav-mobile.sticky {
-        display: flex;
+    .sticky {
         position: fixed;
         top: 0;
         width: 100%;
         z-index: 100;
     }
+ 
+ 
 }
