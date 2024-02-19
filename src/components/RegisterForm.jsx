@@ -154,7 +154,7 @@ const RegisterForm = () => {
             <button className="DownloadButton" type="submit" onClick={() => window.open('https://drive.google.com/file/d/1o4tzQs7BFD27cctLRAfAs20xLFPf-KMM/view', '_blank')}>
   렛즈 소개서 다운로드
 </button>
-{/* <button className="letzButton" type="button" onClick={() => {
+ <button className="letzButton" type="button" onClick={() => {
         const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
         
         if (isIOS) {
@@ -165,8 +165,8 @@ const RegisterForm = () => {
         }
     }}
 >
-    프리 런칭 이벤트 참여하기
-</button> */}
+    베타 서비스 알림 신청하기
+</button> 
         </form>
     );
 };
