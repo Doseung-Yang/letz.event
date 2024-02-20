@@ -17,8 +17,6 @@ const First = () => {
         seconds: '00'
     });
     const [height, setheight] = useState('100%');
-
-
     useEffect(() => {
         const handleResize = () => {
 
@@ -36,8 +34,6 @@ const First = () => {
                 setTop(0);
                 setIsMobile(false);
             }
-
-          
              if (window.innerWidth <= 400) {
                 setheight('78%');  
             } else if (window.innerWidth <= 800) {
@@ -52,9 +48,7 @@ const First = () => {
                 setheight('78%'); 
                 setWith('100%');
             }
-        
         };
-
         window.addEventListener('resize', handleResize);
         handleResize();
 
@@ -62,7 +56,6 @@ const First = () => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
-
     useEffect(() => {
         const countdownDate = new Date("2024-02-26").getTime();
         const interval = setInterval(() => {
@@ -73,7 +66,6 @@ const First = () => {
             const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, '0');
             const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0');
             const seconds = Math.floor((distance % (1000 * 60)) / 1000).toString().padStart(2, '0');
-
             setTimeLeft({
                 days: days,
                 hours: hours,
@@ -85,12 +77,10 @@ const First = () => {
                 clearInterval(interval);
             }
         }, 1000);
-
         return () => {
             clearInterval(interval);
         };
     }, []);
-
     const defaultOptions = {
         loop: true,
         autoplay: true, 
@@ -99,13 +89,10 @@ const First = () => {
             preserveAspectRatio: 'xMidYMid slice'
         }
     };
-
     const handleClick = (e, url) => {
         e.preventDefault();
         document.querySelector(url).scrollIntoView({ behavior: 'smooth' });
     }
-
-    
     return (
         <>
             <section id="first">
@@ -167,5 +154,4 @@ const First = () => {
         </>
     );
 }
-
 export default First;

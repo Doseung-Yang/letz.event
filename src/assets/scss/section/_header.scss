@@ -150,14 +150,6 @@
 } 
 
 @media (max-width: 768px) {
-    .first__nav-mobile {
-        display: none;
-    }
-    .first__nav-mobile.sticky {
-        display: block;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 100;
-    }
+   
+ 
 }

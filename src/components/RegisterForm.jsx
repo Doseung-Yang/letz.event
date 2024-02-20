@@ -149,7 +149,7 @@ const RegisterForm = () => {
                 <li>2월 19일 이후 앱 업데이트 후 사용해주세요.</li>
               </ul>
             </div>
-
+            <div class="buttonWrapper">
             <button className="submitButton" type="button" onClick={() => {
         const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
         
@@ -158,9 +158,9 @@ const RegisterForm = () => {
         } else {
             // iOS가 아닐 경우 토스트 메시지 출력
             toast.error('렛즈 베타 서비스는 현재 iOS에서만 사용 가능합니다. 추후 안드로이드 OS도 런칭 예정입니다.', { duration: 3000 });
-        }
-    }}
->프리 런칭 이벤트 참여하기</button>
+        }}}>프리 런칭 이벤트 참여하기</button>
+        </div>
+
 <button className="letzButton" type='submit'>
         베타 서비스 알림 신청하기
         </button> 
