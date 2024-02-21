@@ -158,8 +158,23 @@ const RegisterForm = () => {
         const urlParams = new URLSearchParams(window.location.search);
         const version = urlParams.get('version');
 
-        // 앱 버전이 최신 버전이면 'letz://open' 실행, 아니면 와디즈 앱으로 이동
-        if (version === '9.5.5') {
+        // 버전을 비교하기 위해 숫자 배열로 변환
+        const currentVersion = version.split('.').map(Number); // 예: '9.5.4' => [9, 5, 4]
+        const minVersion = [9, 5, 4];
+
+        // 버전 체크
+        let isMinVersionOrHigher = true; 
+        for (let i = 0; i < minVersion.length; i++) {
+            if (currentVersion[i] > minVersion[i]) {
+                break;
+            } else if (currentVersion[i] < minVersion[i]) {
+                isMinVersionOrHigher = false;
+                break;
+            }
+        }
+
+        // 앱 버전이 최신 버전(9.5.4) 이상이면 'letz://open' 실행, 아니면 와디즈 앱으로 이동
+        if (isMinVersionOrHigher) {
             window.open('letz://open', '_blank');
         } else {
             window.location.href = 'https://apps.apple.com/kr/app/%EC%99%80%EB%94%94%EC%A6%88/id1107828621';
@@ -169,6 +184,7 @@ const RegisterForm = () => {
         toast.error('렛즈 베타 서비스는 현재 iOS에서만 사용 가능합니다. 추후 안드로이드 OS도 런칭 예정입니다.', { duration: 3000 });
     }
 }}>프리 런칭 이벤트 참여하기</button>
+
 
 
         </div>
