@@ -154,40 +154,19 @@ const RegisterForm = () => {
     const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
     if (isIOS) {
-        try {
-            // URL에서 버전 정보를 파싱
-            const urlParams = new URLSearchParams(window.location.search);
-            const version = urlParams.get('version');
+        // 'letz://open' 실행
+        window.location.href = 'letz://open';
 
-            // 버전을 비교하기 위해 숫자 배열로 변환
-            const currentVersion = version.split('.').map(Number); // 예: '9.5.4' => [9, 5, 4]
-            const minVersion = [9, 5, 4];
-
-            // 버전 체크
-            let isMinVersionOrHigher = true; 
-            for (let i = 0; i < minVersion.length; i++) {
-                if (currentVersion[i] > minVersion[i]) {
-                    break;
-                } else if (currentVersion[i] < minVersion[i]) {
-                    isMinVersionOrHigher = false;
-                    break;
-                }
-            }
-
-            if (isMinVersionOrHigher) {
-                window.location.href = 'letz://open';
-            } else {
-                window.location.href = 'https://apps.apple.com/kr/app/%EC%99%80%EB%94%94%EC%A6%88/id1107828621';
-            }
-        } catch (error) {
-            console.error('버전 체크 중 오류 발생:', error);
+        // 일정 시간 후에 앱스토어로 이동
+        setTimeout(() => {
             window.location.href = 'https://apps.apple.com/kr/app/%EC%99%80%EB%94%94%EC%A6%88/id1107828621';
-        }
+        }, 1000);
     } else {
         // iOS가 아닐 경우 토스트 메시지 출력
         toast.error('렛즈 베타 서비스는 현재 iOS에서만 사용 가능합니다. 추후 안드로이드 OS도 런칭 예정입니다.', { duration: 3000 });
     }
 }}>프리 런칭 이벤트 참여하기</button>
+
 
 
 
