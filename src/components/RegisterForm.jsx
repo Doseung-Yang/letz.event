@@ -152,31 +152,35 @@ const RegisterForm = () => {
             <div class="buttonWrapper">
             <button className="submitButton" type="button" onClick={() => {
     const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-    
+
     if (isIOS) {
-        // URL에서 버전 정보를 파싱
-        const urlParams = new URLSearchParams(window.location.search);
-        const version = urlParams.get('version');
+        try {
+            // URL에서 버전 정보를 파싱
+            const urlParams = new URLSearchParams(window.location.search);
+            const version = urlParams.get('version');
 
-        // 버전을 비교하기 위해 숫자 배열로 변환
-        const currentVersion = version.split('.').map(Number); // 예: '9.5.4' => [9, 5, 4]
-        const minVersion = [9, 5, 4];
+            // 버전을 비교하기 위해 숫자 배열로 변환
+            const currentVersion = version.split('.').map(Number); // 예: '9.5.4' => [9, 5, 4]
+            const minVersion = [9, 5, 4];
 
-        // 버전 체크
-        let isMinVersionOrHigher = true; 
-        for (let i = 0; i < minVersion.length; i++) {
-            if (currentVersion[i] > minVersion[i]) {
-                break;
-            } else if (currentVersion[i] < minVersion[i]) {
-                isMinVersionOrHigher = false;
-                break;
+            // 버전 체크
+            let isMinVersionOrHigher = true; 
+            for (let i = 0; i < minVersion.length; i++) {
+                if (currentVersion[i] > minVersion[i]) {
+                    break;
+                } else if (currentVersion[i] < minVersion[i]) {
+                    isMinVersionOrHigher = false;
+                    break;
+                }
             }
-        }
 
-        // 앱 버전이 최신 버전(9.5.4) 이상이면 'letz://open' 실행, 아니면 와디즈 앱으로 이동
-        if (isMinVersionOrHigher) {
-            window.location.href = 'letz://open';
-        } else {
+            if (isMinVersionOrHigher) {
+                window.location.href = 'letz://open';
+            } else {
+                window.location.href = 'https://apps.apple.com/kr/app/%EC%99%80%EB%94%94%EC%A6%88/id1107828621';
+            }
+        } catch (error) {
+            console.error('버전 체크 중 오류 발생:', error);
             window.location.href = 'https://apps.apple.com/kr/app/%EC%99%80%EB%94%94%EC%A6%88/id1107828621';
         }
     } else {
@@ -184,6 +188,7 @@ const RegisterForm = () => {
         toast.error('렛즈 베타 서비스는 현재 iOS에서만 사용 가능합니다. 추후 안드로이드 OS도 런칭 예정입니다.', { duration: 3000 });
     }
 }}>프리 런칭 이벤트 참여하기</button>
+
 
 
 
