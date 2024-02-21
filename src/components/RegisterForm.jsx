@@ -163,7 +163,7 @@ const RegisterForm = () => {
         }, 1000);
     } else {
         // iOS가 아닐 경우 토스트 메시지 출력
-        toast.error('렛즈 베타 서비스는 현재 iOS에서만 사용 가능합니다. 추후 안드로이드 OS도 런칭 예정입니다.', { duration: 3000 });
+        toast.error('렛즈 베타 서비스는 현재 iOS에서만 사용 가능합니다. \n추후 안드로이드 OS도 런칭 예정입니다.', { duration: 3000 });
     }
 }}>프리 런칭 이벤트 참여하기</button>
 
