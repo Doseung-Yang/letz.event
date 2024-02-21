@@ -75,9 +75,9 @@ const Site = () => {
             window.Kakao.Link.sendDefault({
               objectType: 'feed',
               content: {
-                title: '와디즈 응원펀딩 서비스, 렛즈',
-                description: '프리 런칭 알림 신청하고 프로모션 혜택 받으세요',
-                imageUrl: 'https://i.postimg.cc/BvTynQyG/1000-X1000.png',
+                title: '와디즈 팀 펀딩 서비스, 렛즈',
+                description: '누구나 도전하고 응원받을 수 있어요',
+                imageUrl: 'https://i.ibb.co/bLYTK46/1000-X1000.png',
                 link: {
                   mobileWebUrl: shareUrl,
                   webUrl: shareUrl,
