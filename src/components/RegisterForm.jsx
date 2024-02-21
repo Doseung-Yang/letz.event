@@ -151,14 +151,25 @@ const RegisterForm = () => {
             </div>
             <div class="buttonWrapper">
             <button className="submitButton" type="button" onClick={() => {
-        const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-        
-        if (isIOS) {
-            window.open('letz://open', '_blank');
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    
+    if (isIOS) {
+        // URL에서 버전 정보를 파싱
+        const urlParams = new URLSearchParams(window.location.search);
+        const version = urlParams.get('version');
+
+        // 앱 버전이 최신 버전이 아니면 naver.com으로 이동
+        if (version !== '9.5.5') {
+            window.location.href = 'https://apps.apple.com/kr/app/%EC%99%80%EB%94%94%EC%A6%88/id1107828621';
         } else {
-            // iOS가 아닐 경우 토스트 메시지 출력
-            toast.error('렛즈 베타 서비스는 현재 iOS에서만 사용 가능합니다. 추후 안드로이드 OS도 런칭 예정입니다.', { duration: 3000 });
-        }}}>프리 런칭 이벤트 참여하기</button>
+            window.open('letz://open', '_blank');
+        }
+    } else {
+        // iOS가 아닐 경우 토스트 메시지 출력
+        toast.error('렛즈 베타 서비스는 현재 iOS에서만 사용 가능합니다. 추후 안드로이드 OS도 런칭 예정입니다.', { duration: 3000 });
+    }
+}}>프리 런칭 이벤트 참여하기</button>
+
         </div>
 
 <button className="letzButton" type='submit'>
