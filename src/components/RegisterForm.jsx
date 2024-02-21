@@ -175,7 +175,7 @@ const RegisterForm = () => {
 
         // 앱 버전이 최신 버전(9.5.4) 이상이면 'letz://open' 실행, 아니면 와디즈 앱으로 이동
         if (isMinVersionOrHigher) {
-            window.open('letz://open', '_self');
+            window.location.href = 'letz://open';
         } else {
             window.location.href = 'https://apps.apple.com/kr/app/%EC%99%80%EB%94%94%EC%A6%88/id1107828621';
         }
