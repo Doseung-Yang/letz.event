@@ -144,7 +144,7 @@ const RegisterForm = () => {
             </div>
             <div className="agreeAbout" style={{ textAlign: 'center', lineHeight: '2', height:'124px', transform: 'translateY(-20px)', marginTop: '10px'}}>
               <ul style={{ listStyleType: 'disc', textAlign: 'left', paddingLeft: '20px'}}>
-                <li>귀하는 동의를 거부할 수 있습니다.&nbsp; 다만 동의를 거부할 경우, 알림 정보 제공이 제한됩니다.</li>
+                <li>귀하는 동의를 거부할 수 있습니다.<br/>다만 동의를 거부할 경우, 알림 정보 제공이 제한됩니다.</li>
                 <li>렛즈 베타 서비스는 현재 iOS에서만 사용 가능합니다. </li>
                 <li>2월 19일 이후 앱 업데이트 후 사용해주세요.</li>
               </ul>
