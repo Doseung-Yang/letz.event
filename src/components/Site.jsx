@@ -122,7 +122,7 @@ const Site = () => {
                                 </div>
                             </div>
                         </div>
-                        <button className="DownloadButton" type="submit" style={{marginTop:'3rem'}} onClick={() => window.open('https://drive.google.com/file/d/1o4tzQs7BFD27cctLRAfAs20xLFPf-KMM/view', '_blank')}>
+                        <button className="DownloadButton" type="submit" style={{marginTop:'3rem'}} onClick={() => window.open('https://drive.google.com/file/d/1Z4b6neVPhrdruz241aumAIEG_kGbBAeO/view', '_blank')}>
   렛즈 소개서 다운로드
 </button>
                         <div className='lastTitle'> {siteText[0].footer_1}</div>

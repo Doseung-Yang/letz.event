@@ -1,17 +1,22 @@
 #header {
-    @include position-fixed;
+    position: absolute;  // position-fixed를 position: absolute;로 변경
     z-index: 10000;
     height: 64px;
+    width: 500px;
+    .header__logo {
+        position: absolute; 
+        top: 0;
+    }
 }
 @media (min-width: 1920px){
     #header {
-        width: 1920px;
+        width: 500px;
         height: 64px;
     }
     .header__inner {
         @include flex-between;
-        background-color:rgba(20, 24, 30, 0.75);
-        width: 1920px;
+        background-color:none;
+        width: 500px;
         height: 64px;
         justify-content: space-between;
         padding: 0px,80px,8px,80px;
@@ -19,18 +24,20 @@
             font-size: 0.9rem;
             text-align: center;
             line-height: 1;
+            position: absolute;  // 로고를 상단에 위치
+            top: 0;
         }
         .letz_logo {
             margin: 0 1rem;
         }
         @media (min-width: 1440px){
             #header {
-                width: 1440px;
+                width: 500px;
                 height: 64px;
             }
             .header__inner {
                 @include flex-between;
-                background-color:rgba(20, 24, 30, 0.75);
+                background-color: none;
                 width: 1440px;
                 height: 64px;
                 justify-content: space-between;
@@ -40,6 +47,8 @@
                     font-size: 0.9rem;
                     text-align: center;
                     line-height: 1;
+                    position: absolute;  // 로고를 상단에 위치
+                    top: 0;
                 }
                 .letz_logo {
                     margin: 0 1rem;
@@ -49,6 +58,8 @@
             font-size: 0.5rem;
             text-align: center;
             line-height: 1;
+            position: absolute;  // 로고를 상단에 위치
+            top: 0;
         }
     }
 }
@@ -57,99 +68,16 @@
 }
 .header__inner {
     @include flex-between;
-    background-color:rgba(20, 24, 30, 0.75);
+    background-color: none;
     padding: 1rem;
 
     .header__logo {
         font-size: 0.9rem;
         text-align: center;
         line-height: 1;
+        position: absolute;  // 로고를 상단에 위치
+        top: 0;
     }
     .letz_logo {
         margin: 0 1rem;
-    }
-    
-    .header__nav {
-        margin: 0 1rem;
-        @media (max-width: 800px){
-            display: none;
-        }
-        li {
-            display: inline;
-            a {
-                font-size: 16px;
-                padding: 0px;
-                margin-right: 3rem;
-                color: rgba(134, 142, 150, 1);
-                position: relative;
-                font-weight: bold;
-            
-                &::before {
-                    content: '';
-                    width: calc(100% - 0px); // 밑줄 길이 조정, 필요에 따라 0px 값을 조절
-                    height: 1px;
-                    background-color: #00FFFF;
-                    position: absolute;
-                    left: 0; // 왼쪽 끝부터 시작
-                    top: 40px;
-                    transform: scaleX(0);
-                    transition: all 0.3s;
-                }
-                &:hover::before {
-                    transform: scaleX(1);
-                }
-            }
-            
-            
-        }
-    }
-    .header__nav__mobile {
-        display: none;
-        width: 40px;
-        height: 40px;
-        cursor: pointer;
-
-        @media (max-width: 800px){
-            padding: 10px;
-            margin-right: 1rem;
-        }
-        .letz_logo {
-            margin: 0 1rem;
-        }
-
-        span {
-            display: block;
-            width: 40px;
-            height: 2px;
-            background-color: var(--black);
-            margin-top: 19px;
-            position: relative;
-
-            &::before {
-                content: "";
-                width: 40px;
-                height: 2px;
-                background-color: var(--black);
-                position: absolute;
-                right: 0;
-                top: 6px;
-                transition: width 0.3s;
-            }
-            &::after {
-                content: "";
-                width: 40px;
-                height: 2px;
-                background-color: var(--black);
-                position: absolute;
-                left: 0;
-                bottom: 6px;
-                transition: width 0.3s;
-            }
-        }
-    }
-} 
-
-@media (max-width: 768px) {
-   
- 
-}
+    }}

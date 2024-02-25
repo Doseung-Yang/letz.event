@@ -19,13 +19,13 @@ export default function Home(){
 
     return (
         <>  
-            <First />
             <Header />
+            <First />
+
             <main id="main" role="main">
                 <Intro />
                 <Skill />
                 <Site />
-                <Footer />
             </main>
             <Toaster position="bottom-center" />
         </>

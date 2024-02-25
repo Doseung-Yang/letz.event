@@ -2,52 +2,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 115vh;
+    width: 1920px;
+    height: 860px;
     background-color: rgb(0, 0, 0);
     overflow-x: hidden;
     max-width: 100%;
-}
-.first__header {
-    width: 1660px;
-    height: 440px;
-.header.hidden {
-        visibility: hidden;
+    
+    .header__inner {
+        font-size: 0.9rem;
+        text-align: center;
+        line-height: 1;
+        position: absolute;  // 로고를 상단에 위치
+        top: 0;
+    }
+    .letz_logo {
+        margin: 0 1rem;
     }
 }
-.first__header__title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.letz_image {
-    position: relative;
-    width: 22vw;
-    height: 20vh;
-    background-size: cover;
-    background-position: center;
-    transform: translateY(-30px);
-}
 
-.letz_image img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    justify-items: center;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 9999; 
-    background-color: #333; 
-}
-
-.letz_image .react-lottie {
+.react-lottie {
     position: absolute;
     top: 0;
     left: 0;
@@ -55,109 +29,114 @@
     height: 100%;
 }
 
-@media (max-width: 1920px) {
-    .letz_image {
-        position: relative;
-        width: 415px;
-        height: 21vh;
-        background-size: cover;
-        background-position: center;
-        transform: translateY(-110px);
-    }
-    .must__day {
-        position: absolute;
-        top: 48%;
-        left: 0;
-        text-align: center;
-        width: 100%;
-    }
-}
-@media (max-width: 1440px) {
-    .letz_image {
-        position: relative;
-        width: 415px;
-        height: 21vh;
-        bottom: 1rem;
-        background-size: cover;
-        background-position: center;
-        transform: translateY(-11px);
-    }
-    .must__day {
-        position: absolute;
-        top: 60%;
-        left: 0;
-        text-align: center;
-        width: 100%;
-    }
-}
-@media (max-width: 768px) {
-    .letz_image {
-        position: relative;
-        width: 320px;
-        height: 25vh;
-        bottom: 1rem;
-        background-size: cover;
-        background-position: center;
-        transform: translateY(90px);
-    } 
-    .must__day {
-        top: 75%;
-        left: 0;
-        text-align: center;
-        width: 100%;
-        position: absolute;
-    }
-    .first__nav {
-        display: block;
-        width: 100%;
-        background-color: rgba(20, 24, 30, 1); 
-        border-top: 1px solid #dee2e6; 
-        box-sizing: border-box; 
-        padding: 14px 10px 14px 10px;
-        z-index: 1000; 
-        border: none;
-        font-size: 1rem;
-        font-weight: 600;
-    }
+// @media (max-width: 1100px) and (max-width: 1920px){
 
-    .first__nav ul {
+//     .letz_image {
+//         position: relative;
+//         width: 100%;
+//         height: 100%;
+//         background-size: cover;
+//         background-position: center;
+//     }
+    
+//     .letz_image img {
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 712px;
+//         height: 323px;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//     }
+    
+//     .letz_image {
+//         position: relative;
+//         bottom: 1rem;
+//         background-size: cover;
+//         background-position: center;
+//     }
+// }
+@media (min-width: 1920) {
+    .letz_lmage {
+        width: 712px;
+        height: 323px;
+    }
+    
+}
+@media (min-width: 360px) and (max-width: 1920px){
+    #first{
         display: flex;
-        justify-content: space-between;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        
+        width: auto;
+        padding: 24px 0px 80px 0px;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
     }
-
-    .first__nav a {
-        color: #212529; 
-        text-decoration: none;
-        display: block;
-    }
-    .first__nav li {
+    .first__header {
+        width: 800px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
         
-        text-align: center;
-        flex: 1;
+        }
+    .lottieHouse {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 360px;
+        height: 100%;
+        margin-top: 80px;
+        order: 1;
+        display: flex; 
+        flex-direction: column;
+    }
+    .submitButton1 {
+        width: 100%;
+        max-width: 420px;
+        height: 56px;
+        border-radius: 4px;
+        border: none;
+        padding: 0 16px;
+        gap: 8px;
+        background-color: rgb(0, 255, 255);
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        font-weight: 500;
+        transition: background 0.3s ease;
+        margin-top: 4rem;
+    }
+    
+    .LetzAbouttitle {
+        display: flex;
+        padding: 12px 20px 12px 30px;
+        align-items: center;
+        border-radius: 4px;
+        background: #101318;
+    }
+    
+    .lenAbout {
+        color: var(--gray-g-600, #868E96);
+        font-family: Pretendard;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 180%; /* 25.2px */
+        letter-spacing: -0.28px;    
+    }
+    
+    .first__bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding: 0px 0px 80px 0px;
     }
 }
-
 
 body {
     overflow-x: hidden;
 }
 
-@media (min-width: 769px) {
-    .first__nav-mobile {
-        display: none;
-    }
-}
-@media (max-width: 768px) {
-    .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 100;
-    }
- 
- 
-}
+
+

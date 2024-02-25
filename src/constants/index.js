@@ -1,31 +1,19 @@
 
-export const headerNav = [
-    {
-        title: "coming-soon",
-        url: "#intro"
-    },
-    {
-        title: "event",
-        url: "#skill"
-    },
-    {
-        title: "about Letz",
-        url: "#site"
-    }
-];
-
 export const firstText = [
     {
         imageUrl: "/pc_logo.png",
-    }
+    },
+    {
+        imagess: "/letzmovie.png"
+    },
 ]
 
 export const introText = [
     {
-        title: "coming-soon",
+        title: "about Letz"
     },
     {
-        subtitle: "렛즈 베타 서비스\n런칭 알림 신청",
+        subtitle: "누구나 도전을\n 시작할 수 있어요",
     },
     {
         subbtitle: "렛즈 베타 서비스는 현재\n iOS에서만 사용 가능합니다.\n 추후 안드로이드 OS도 런칭 예정입니다."
@@ -36,7 +24,7 @@ export const introText = [
 export const skillText = [
     {
         title: "event",
-        subtitle: "프리 런칭 이벤트",
+        subtitle: "도전을 시작하는 프로젝트 리더와\n응원하는 멤버가 함께 하는\n와디즈 팀 펀딩 서비스, 렛즈입니다",
         subbtitle: "2월 19일 - 2월 25일\n 프리 런칭 기간에 프로젝트 오픈하고 \n특별한 혜택 받으세요",
     },
     {
@@ -56,9 +44,12 @@ export const skillText = [
     },
     {
         ftitle3: "혜택 3",
-        fsubtitle2: "와디즈 오피셜 인스타그램\n 콘텐츠 게재",
-        feventitle1: "스토리",
-        feventitle2: "하이라이트",
+        fsubtitle2: "프로젝트 리더",
+        feventitle1: "응원 멤버",
+        fsubtitle22: "Leader",
+        fmember: "Member",
+        membertitle: "리더의 도전을 함께 응원하고 지지하는\n든든한 멤버가 되어주세요",
+        feventitle2: "꿈이 이루어질 수 있도록\n도전을 시작하는 리더가 되어보세요",
         fssubtitle1: "우수 프로젝트 20팀 선정"
     },
     {
@@ -90,8 +81,7 @@ export const skillText = [
 export const siteText = [
     {
         title: "about Letz",
-        subtitle: "누구나 도전하고\n 응원하는 세상,\n 렛즈가 함께합니다",
-        subbtitle: "해볼까? 고민했던 다양한 생각과 도전, 무엇이든 좋습니다\n지금 바로 렛즈에서 시작해보세요",
+        subtitle: "마음 속에 있던 것\n그게 무엇이든",
         potitle: "리더에게 온전히 전하는\n 프로젝트 응원금",
         potitle1: "0%",
         potitle2: "프로젝트 오픈까지\n 필요한 시간",
@@ -102,8 +92,8 @@ export const siteText = [
         Ssunder1: "프로젝트 오픈까지\n필요한 시간",
         Ssunder2: "도전을 응원할 수 있는\n멤버들",
         Ssunabout: "지금, 렛즈에서 바로 도전하세요",
-        tabtitle: "해볼까? 고민했던 다양한 생각과 도전,\n무엇이든 좋습니다\n지금 바로 렛즈에서 시작해보세요",
-        footer_1: "친구에게 공유하고\n렛즈 베타 서비스\n가장 먼저 사용해보세요",
+        tabtitle: "3분이면 도전을 시작하고\n응원받을 수 있어요",
+        footer_1: "렛즈 이야기를 공유하고\n지금 바로 도전해보세요",
     },
 ];
 

@@ -27,8 +27,7 @@
           width: calc(100% - 20px);
           margin-left: 10px;  
           margin-right: 10px;
-    }
-}
+    }}
     p {
         margin-top: 5px;
     }
@@ -73,7 +72,6 @@
         right: 1rem; 
         max-width: 100%;  
         z-index: 9999;
-
     }
 }
 
@@ -147,7 +145,6 @@
     display: inline-block;
     width: 20px;
     height: 20px;
-    
     border: 2px solid gray;
     border-radius: 50%;
     background-color: rgba(134, 142, 150, 1);

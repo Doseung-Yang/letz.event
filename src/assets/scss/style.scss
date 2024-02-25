@@ -20,7 +20,14 @@
     font-style: normal;
     font-display: swap;
   }
-  
+  @font-face {
+    font-family: 'GT Walsheim';
+    src: url('https://raw.githubusercontent.com/D-PLACE/dplace2/master/dplace2/static/fonts/GT-Walsheim-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
   .pretendard {
     font-family: "Pretendard";
   }
