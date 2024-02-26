@@ -11,7 +11,7 @@ const SnsIcon = styled.img`
     width: 61px;
     height: auto; 
     cursor: pointer;
-    margin-top: 100px;
+    margin-top: 32px;
 
     @media (max-width: 768px) {
         width: 60px;
@@ -102,8 +102,8 @@ const Site = () => {
         />
     </div>
 }
-                        <h2 style={{ whiteSpace: 'pre-line', marginTop: '50px'}}>{siteText[0].tabtitle}</h2>
-                        <div className="rolling-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }} ref={observerRef}>
+                        <h2 style={{ whiteSpace: 'pre-line', marginTop: '120px'}}>{siteText[0].tabtitle}</h2>
+                        <div className="rolling-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative', gap:'16px'}} ref={observerRef}>
                             <div className='rollingSSunder'>{siteText[0].potitle2}
                                 <div style={{ position: 'absolute', right: 30, bottom: 15, fontSize: '2rem'}}>
                                     {isVisible && <CountUp end={countEndMinutes} duration={10} suffix='분'/>}
@@ -121,9 +121,11 @@ const Site = () => {
                                 </div>
                             </div>
                         </div>
-                        <button className="DownloadButton" type="submit" style={{marginTop:'3rem'}} onClick={() => window.open('https://drive.google.com/file/d/1Z4b6neVPhrdruz241aumAIEG_kGbBAeO/view', '_blank')}>
+                        <button className="DownloadButton" type="submit" style={{marginTop:'120px', marginBottom:'120px'}} onClick={() => window.open('https://drive.google.com/file/d/1Z4b6neVPhrdruz241aumAIEG_kGbBAeO/view', '_blank')}>
   렛즈 소개서 다운로드
 </button>
+
+            <div className='lastbackground'>
                         <div className='lastTitle'> {siteText[0].footer_1}</div>
                         <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', marginTop: '1rem', marginBottom: '1rem'}}>
                             <a href="#" onClick={shareKakao}>
@@ -135,6 +137,7 @@ const Site = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </section>
     );
 }

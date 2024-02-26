@@ -5,7 +5,7 @@ import Image from 'next/image';
 import RegisterForm from "@/components/RegisterForm";
 import LetzImage from '../assets/img/letz_image_height.png';
 import LetzImage_width from '../assets/img/letz_image_width.png';
-import ImgBtn from '../assets/img/letz_movie_go.png';
+import ImgBtn from '../assets/img/letz_movie_go.svg';
 import Xbtn from '../assets/img/xbutton.svg'
 
 const Intro = () => {
