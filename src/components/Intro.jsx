@@ -75,7 +75,7 @@ const Intro = () => {
                 {windowWidth >= 1100 ? (
                     <Image src={LetzImage_width} alt="Letz Image"/>
                 ) : (
-                    <Image src={LetzImage} alt="Letz Image"/>
+                    <Image src={LetzImage} alt="Letz Image" />
                 )}
                 <button className="playButton" onClick={() => setModalOpen(true)}>
                     <Image src={ImgBtn} alt="play button" layout="fill" objectFit="contain" />

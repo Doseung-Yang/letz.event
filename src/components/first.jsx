@@ -48,7 +48,7 @@ const First = () => {
                     <div className='first__header__title'>
                         {!isMobile && (
                             <div className='letz_image'>
-                                <img src={firstText[0].imageUrl} alt="letz_image" />
+                                <img src={firstText[0].imageUrl} alt="letz_image" className="letz_image_responsive" />
                             </div>
                         )}
                         <div className='lottieHouse'>
@@ -58,7 +58,6 @@ const First = () => {
                         />
                         </div>
                        
-
                         {isMobile && (
                             <>
                                 <div className="mov_title" style={{ position: 'absolute', left: '0', textAlign: 'center', width: '100%'}}>
