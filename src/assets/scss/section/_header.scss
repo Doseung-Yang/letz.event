@@ -68,7 +68,7 @@
 .header__inner {
     @include flex-between;
     background-color: none;
-    padding: 1rem;
+    padding: 0rem;
 
     .header__logo {
         font-size: 0.9rem;
@@ -78,5 +78,6 @@
         top: 0;
     }
     .letz_logo {
-        margin: 0 1rem;
+        padding-top: 24px;
+        padding-left: 21px;
     }}

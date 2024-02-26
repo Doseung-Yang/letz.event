@@ -39,6 +39,10 @@
         margin-top: 0px;
         
     }
+    .rolling-container {
+        align-items: flex-end;
+gap: 16px;
+    }
 }
 
 
@@ -85,6 +89,7 @@
     white-space: pre-line;
     text-align: left;
     position: relative;
+    margin-right: 16px;
 }
 
 @media screen and (max-width: 800px) {
