@@ -10,9 +10,9 @@
     justify-content: center;
     padding: 100px 0;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1099px) {
     .site__inner {
-        padding: 50px 0;
+        padding: 0px 0;
     }
     .site__wrap {
         width: 100%;
@@ -25,6 +25,19 @@
     }
     .rollingSSunder {
         width: 100%;
+    }
+    .lastbackground {
+        display: flex;
+        width: 1099px;
+        padding: 56px 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .lastTitle {
+        margin-top: 0px;
+        
     }
 }
 
@@ -83,7 +96,7 @@
     color: var(--white-alpha-100, #FFF);
     font-size: 20px;
     white-space: pre-line;
-    margin-top: 100px;
+    margin-top: 0px;
     text-align: center;
     font-weight: bold;
 }
