@@ -4,6 +4,8 @@ import MOAnimationData from '../assets/img/MO.json';
 import '@/assets/scss/section/_first.scss';
 import {firstText, headerNav} from "@/constants";
 import { setWith } from 'lodash';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const First = () => {
   const [animationData, setAnimationData] = useState(null);
@@ -65,24 +67,21 @@ const First = () => {
                                 </div>
                             </>
                         )}
-
                         <div className='first__bottom'>
                         <button className="submitButton1" type="button" onClick={() => {
-                            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-
-                            if (isIOS) {
-                                // 'letz://open' 실행
-                                window.location.href = 'letz://open';
-
-                                // 일정 시간 후에 앱스토어로 이동
-                                setTimeout(() => {
-                                    window.location.href = 'https://apps.apple.com/kr/app/%EC%99%80%EB%94%94%EC%A6%88/id1107828621';
-                                }, 1000);
-                            } else {
-                                // iOS가 아닐 경우 토스트 메시지 출력
-                                toast.error('렛즈 베타 서비스는 현재 iOS에서만 사용 가능합니다. \n추후 안드로이드 OS도 런칭 예정입니다.', { duration: 3000 });
-                            }
-                        }}>렛즈 시작하기</button>
+                  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+                  if (isIOS) {
+                      // 'letz://open' 실행
+                      window.location.href = 'letz://open';
+                      // 일정 시간 후에 앱스토어로 이동
+                      setTimeout(() => {
+                          window.location.href = 'https://apps.apple.com/kr/app/%EC%99%80%EB%94%94%EC%A6%88/id1107828621';
+                      }, 1000);
+                  } else {
+                      // iOS가 아닐 경우 토스트 메시지 출력
+                      toast.error('렛즈 베타 서비스는 현재 iOS에서만 사용 가능합니다. \n추후 안드로이드 OS도 런칭 예정입니다.', { duration: 3000 });
+                  }
+              }}>렛즈 시작하기</button>
                         <div className='LetzAbouttitle'>
                             <ul className='lenAbout' style={{listStyleType: 'disc'}}>
                             <li>렛즈 베타 서비스는 현재 iOS에서만 사용 가능합니다.</li>
@@ -91,9 +90,6 @@ const First = () => {
                         </div>
                         </div>
                     </div>
-                    
-
-                        
                 </div>
             </section>
         </>
