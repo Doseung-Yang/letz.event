@@ -21,7 +21,6 @@
     .site__wrap > div, .rolling-container {
         flex-direction: column;
         justify-content: center;  
-        gap: 20px;  
     }
     .rollingSSunder {
         width: 100%;
@@ -29,11 +28,10 @@
     .lastbackground {
         display: flex;
         width: 1099px;
-        padding: 56px 10px;
+        padding: 56px 10px 56px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 10px;
     }
     .lastTitle {
         margin-top: 0px;

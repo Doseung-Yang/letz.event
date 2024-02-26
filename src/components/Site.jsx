@@ -15,12 +15,12 @@ const SnsIcon = styled.img`
 
     @media (max-width: 768px) {
         width: 60px;
-        margin-top: 80px;
+        margin-top: 32px;
     }
 
     @media (max-width: 480px) {
         width: 60px;
-        margin-top: 60px;
+        margin-top: 32px;
     }
 `;
 
