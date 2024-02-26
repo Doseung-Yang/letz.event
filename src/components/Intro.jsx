@@ -72,7 +72,7 @@ const Intro = () => {
                 )}
             </div>
             <div className="letzmovieimg">
-                {windowWidth >= 1920 ? (
+                {windowWidth >= 1100 ? (
                     <Image src={LetzImage_width} alt="Letz Image"/>
                 ) : (
                     <Image src={LetzImage} alt="Letz Image"/>
@@ -84,5 +84,6 @@ const Intro = () => {
         </section>
     );
 };
+
 
 export default Intro;

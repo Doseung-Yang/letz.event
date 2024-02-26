@@ -92,7 +92,6 @@ const Site = () => {
             <div className="site__inner">
                 <div className="site__wrap">
                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: 'auto' }}>
-                        <h3>{siteText[0].title}</h3>
                         <h1 style={{ whiteSpace: 'pre-line'}}>{siteText[0].subtitle}</h1> 
                         {animationData && 
     <div style={{ position: 'relative', minWidth: '1600px', maxWidth: '1764px', width: '100%', height: '160px', alignSelf: 'center' }}>
