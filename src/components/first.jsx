@@ -79,8 +79,30 @@ const First = () => {
                       }, 1000);
                   } else {
                       // iOS가 아닐 경우 토스트 메시지 출력
-                      toast.error('렛즈 베타 서비스는 현재 iOS에서만 사용 가능합니다. \n추후 안드로이드 OS도 런칭 예정입니다.', { duration: 3000 });
-                  }
+                      toast.error(
+                        <>
+                          <p style={{ color: 'white', fontSize: '14px', whiteSpace: 'pre-wrap', wordWrap: 'break-word' }}>
+                            렛즈 베타 서비스는 현재 iOS에서만 사용 가능합니다.
+                          </p>
+                          <p style={{ color: 'white', fontSize: '14px', whiteSpace: 'pre-wrap', wordWrap: 'break-word' }}>
+                            추후 안드로이드 OS도 런칭 예정입니다.
+                          </p>
+                        </>,
+                        {
+                          autoClose: 3000,
+                          position: 'top-center', // 위치를 상단 가운데로 설정
+                          hideProgressBar: true,
+                          style: {
+                            backgroundColor: 'gray',
+                            width: 'auto', // 넓이를 자동으로 설정
+                            minWidth: '300px', // 최소 넓이를 300px로 설정
+                          },
+                        }
+                      );
+                      
+                      
+                      
+                    }
               }}>렛즈 시작하기</button>
                         <div className='LetzAbouttitle'>
                             <ul className='lenAbout' style={{listStyleType: 'disc'}}>
