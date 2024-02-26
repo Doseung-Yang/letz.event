@@ -93,7 +93,7 @@ const First = () => {
                         </>,
                         {
                           autoClose: 3000,
-                          position: 'bottom-center', // 위치를 상단 가운데로 설정
+                          position: 'top-left', // 위치를 상단 가운데로 설정
                           hideProgressBar: true,
                           style: {
                             backgroundColor: 'gray',
