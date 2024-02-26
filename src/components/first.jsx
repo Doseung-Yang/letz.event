@@ -82,7 +82,10 @@ const First = () => {
                       toast.error(
                         <>
                           <p style={{ color: 'white', fontSize: '14px', whiteSpace: 'pre-wrap', wordWrap: 'break-word' }}>
-                            렛즈 베타 서비스는 현재 iOS에서만 사용 가능합니다.
+                            렛즈 베타 서비스는
+                          </p>
+                          <p style={{ color: 'white', fontSize: '14px', whiteSpace: 'pre-wrap', wordWrap: 'break-word' }}>
+                            현재 iOS에서만 사용 가능합니다.
                           </p>
                           <p style={{ color: 'white', fontSize: '14px', whiteSpace: 'pre-wrap', wordWrap: 'break-word' }}>
                             추후 안드로이드 OS도 런칭 예정입니다.
