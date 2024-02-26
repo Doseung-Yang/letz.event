@@ -16,7 +16,7 @@
     }
     .site__wrap {
         width: 100%;
-        padding: 0 20px;
+        padding: 0 0px;
     }
     .site__wrap > div, .rolling-container {
         flex-direction: column;
@@ -94,7 +94,8 @@
 }
 .lastTitle {
     color: var(--white-alpha-100, #FFF);
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: 600;
     white-space: pre-line;
     margin-top: 0px;
     text-align: center;

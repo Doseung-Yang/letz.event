@@ -9,6 +9,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: #14181E;
     }
 
     .letzmovieimg {
@@ -109,16 +110,14 @@
 
 .intro__coming-soon h3 {
     color: rgba(0, 255, 255, 1);
-    font-size: 14px;
+    font-size: 24px;
     font-weight: 700;
-    margin-bottom: 16px;
 }
 
 .intro__coming-soon h1 {
     color: rgba(255, 255, 255, 1);
     font-size: 26px;
     font-weight: 700;
-    margin-bottom: 10px;
     white-space: pre-line;
 }
 
@@ -181,5 +180,14 @@
         line-height: 56px; /* 155.556% */
         letter-spacing: -0.72px;
         white-space: nowrap;
+    }
+    .intro__inner {
+        padding: 120px 0px 60px 0px;
+    }
+    .intro__coming-soon h3 {
+        gap: 16;
+    }
+    #intro { 
+        padding-bottom: 120px;
     }
 }

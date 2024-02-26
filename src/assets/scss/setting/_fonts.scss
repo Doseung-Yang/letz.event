@@ -19,3 +19,13 @@
     font-weight: bold;
     font-style: normal;
 }
+
+@font-face {
+  font-family: "GT Walsheim Pro Black";
+  src: url("https://db.onlinewebfonts.com/t/46682a5505897003c69c26bf0dc2d3c0.eot");
+  src: url("https://db.onlinewebfonts.com/t/46682a5505897003c69c26bf0dc2d3c0.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/46682a5505897003c69c26bf0dc2d3c0.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/46682a5505897003c69c26bf0dc2d3c0.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/46682a5505897003c69c26bf0dc2d3c0.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/46682a5505897003c69c26bf0dc2d3c0.svg#GT Walsheim Pro Black")format("svg");
+}

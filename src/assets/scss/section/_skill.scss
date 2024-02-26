@@ -10,14 +10,10 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    padding: 120px 0;
+    padding-top: 120px 0;
 
     @media screen and (max-width: 800px) {
         padding: 120px 0;
-    }
-
-    @media screen and (min-width: 801px) {
-        padding: 220px 0;
     }
 }
 
@@ -92,7 +88,6 @@
 }
 .skill__porder {
     width: 450px;
-    margin-top: 17px;
     border-radius: 20px;
     padding: 30px 30px 20px 30px;
     border-radius: 15px;
@@ -132,7 +127,7 @@
     .skill__special {
         flex-direction: column;
         display: flex;
-        padding: 120px 0px;
+        padding: 80px 0px;
         align-items: center;
         gap: 16px;
         justify-content: center;
@@ -144,7 +139,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 20px;
     }
     
     .skill__porder-2 {
@@ -154,7 +148,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 20px;
     }
 }
 
@@ -170,9 +163,9 @@
     .skill__special {
         flex-direction: row;
         display: flex;
-        padding: 80px 0px;
+        padding: 120px 0px;
         align-items: center;
-        gap: 20px;
+        gap: 16px;
         justify-content: center;
         align-items: flex-end;
     }
@@ -184,16 +177,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 20px;
     }
     .skill__inner {
-        padding: 80px 0px;
+        padding-top: 120px;
     }
     .skill__event h1 {
         font-size: 36px;
     }
 }
-
 
 
 
@@ -214,9 +205,8 @@
 .fttitle {
     font-size: 16px;
     line-height: 1.2rem;
-    font-weight: 600;
+    font-weight: 700;
     color: #000;
-    margin-top: 10px;
     white-space: pre-line;
     line-height: 1.4;
 }
@@ -224,12 +214,13 @@
 .leader1 {
     color: var(--black-alpha-100, #000);
     text-align: center;
-    font-family: "GT Walsheim";
+    font-family: "GT Walsheim Pro Black";
     font-size: 36px;
     font-style: normal;
     font-weight: 800;
     line-height: 56px; /* 155.556% */
     letter-spacing: -0.72px;
+    padding-bottom: 20px;
 }
 .fevbox {
     background-color: rgba(73, 80, 87, 1);

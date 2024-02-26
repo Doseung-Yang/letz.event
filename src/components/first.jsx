@@ -96,7 +96,7 @@ const First = () => {
                         fontSize: '14px', 
                         whiteSpace: 'pre-wrap', 
                         wordWrap: 'break-word', 
-                        textAlign: 'left' // 왼쪽 정렬 추가
+                        textAlign: 'left' 
                     }}>
                     렛즈 베타 서비스는 현재 iOS에서만 사용 가능합니다. 추후 안드로이드 OS도 런칭 예정입니다.
                     </p>
