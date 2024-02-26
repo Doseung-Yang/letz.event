@@ -125,7 +125,7 @@ const Site = () => {
   렛즈 소개서 다운로드
 </button>
                         <div className='lastTitle'> {siteText[0].footer_1}</div>
-                        <div style={{ display: 'flex', justifyContent: 'center', gap: '3rem', marginTop: '1rem', marginBottom: '1rem'}}>
+                        <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', marginTop: '1rem', marginBottom: '1rem'}}>
                             <a href="#" onClick={shareKakao}>
                                 <SnsIcon src="/kakao.svg" alt="share_icon"/>
                             </a>
