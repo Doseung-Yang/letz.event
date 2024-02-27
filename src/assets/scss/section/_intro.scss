@@ -169,6 +169,13 @@
 }
 
 @media (min-width: 1100px) and (max-width: 1921px) {
+    .intro__coming-soon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
     .intro__coming-soon h1 {
         color: var(--white-alpha-100, #FFF);
         text-align: center;
@@ -204,13 +211,15 @@
 
 
 @media screen and (max-width: 1099px) {
+    .intro__coming-soon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .intro__coming-soon h3 {
         font-size: 14px;
 }
 
-    .intro__coming-soon h3 { 
-        padding-bottom: 8px;
-    }
     .playButton {
         width: 111px;
         height: 130px;

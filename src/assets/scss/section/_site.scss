@@ -39,7 +39,7 @@
     }
     .rolling-container {
         align-items: flex-end;
-gap: 16px;
+        gap: 16px;
     }
 }
 
@@ -87,7 +87,6 @@ gap: 16px;
     white-space: pre-line;
     text-align: left;
     position: relative;
-    margin-right: 16px;
 }
 
 @media screen and (max-width: 800px) {
@@ -150,5 +149,13 @@ gap: 16px;
         font-weight: 700;
         line-height: 56px; /* 155.556% */
         letter-spacing: -0.72px;
+    }
+    .rolling-container {
+        display: flex;
+        align-items: flex-end;
+        gap: 16px;
+    }
+    .rollingSSunder {
+        font-size: 16px;
     }
 }
