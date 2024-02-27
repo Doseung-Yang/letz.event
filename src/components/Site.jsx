@@ -121,7 +121,7 @@ const Site = () => {
                                 </div>
                             </div>
                         </div>
-                        <button className="DownloadButton" type="submit" style={{marginTop:'120px', marginBottom:'120px'}} onClick={() => window.open('https://drive.google.com/file/d/1Z4b6neVPhrdruz241aumAIEG_kGbBAeO/view', '_blank')}>
+                        <button className="DownloadButton" type="submit" onClick={() => window.open('https://drive.google.com/file/d/1Z4b6neVPhrdruz241aumAIEG_kGbBAeO/view', '_blank')}>
   렛즈 소개서 다운로드
 </button>
 

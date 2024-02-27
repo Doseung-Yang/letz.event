@@ -33,13 +33,21 @@
         justify-content: center;
         align-items: center;
     }
-    .lastTitle {
-        margin-top: 0px;
-        
-    }
     .rolling-container {
         align-items: flex-end;
         gap: 16px;
+    }
+    .DownloadButton {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    .lastTitle {
+        color: var(--white-alpha-100, #FFF);
+        font-size: 20px;
+        font-weight: 600;
+        white-space: pre-line;
+        text-align: center;
+        font-weight: bold;
     }
 }
 
@@ -77,11 +85,11 @@
 
 .rollingSSunder {
     width: 300px;
-    height: 150px;
+    height: 120px;
     background-color: rgba(39, 46, 56, 1);
     border-radius: 15px;
     padding: 20px 17px;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: bold;
     color: rgba(255, 255, 255, 1);
     white-space: pre-line;
@@ -89,20 +97,8 @@
     position: relative;
 }
 
-@media screen and (max-width: 800px) {
-    .rollingSSunder {
-        margin-top: 15px;
-    }
-}
-.lastTitle {
-    color: var(--white-alpha-100, #FFF);
-    font-size: 24px;
-    font-weight: 600;
-    white-space: pre-line;
-    margin-top: 0px;
-    text-align: center;
-    font-weight: bold;
-}
+
+
 .SnsIcon {
     z-index: 10;
     position: relative;
@@ -127,7 +123,12 @@
         gap: 0px;
     }
     .lastTitle {
-        margin-top: 0;
+        color: var(--white-alpha-100, #FFF);
+        font-size: 24px;
+        font-weight: 600;
+        white-space: pre-line;
+        text-align: center;
+        font-weight: bold;
     }
 
     .site__wrap h1 {
@@ -157,5 +158,12 @@
     }
     .rollingSSunder {
         font-size: 16px;
+    }
+
+    .DownloadButton {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    width: 388px;
+    height: 56px;
     }
 }
