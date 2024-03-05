@@ -105,18 +105,18 @@ const Site = () => {
                         <h2 style={{ whiteSpace: 'pre-line', marginTop: '120px'}}>{siteText[0].tabtitle}</h2>
                         <div className="rolling-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative'}} ref={observerRef}>
                             <div className='rollingSSunder'>{siteText[0].potitle2}
-                                <div style={{ position: 'absolute', right: 30, bottom: 15, fontSize: '2rem'}}>
+                                <div style={{ position: 'absolute', right: 30, bottom: 15, fontSize: '2rem', color:'#FFFFFF'}}>
                                     {isVisible && <CountUp end={countEndMinutes} duration={10} suffix='분'/>}
                                 </div>
                             </div>
                             <div className='rollingSSunder'>{siteText[0].Ssunder2}
-                                <div style={{ position: 'absolute', right: 30, bottom: 15, fontSize: '2rem'}}>
+                                <div style={{ position: 'absolute', right: 30, bottom: 15, fontSize: '2rem', color:'#FFFFFF'}}>
                                     {isVisible && <CountUp end={countEndMember} duration={4} suffix='만 명+'/>}
                                 </div>
                             </div>
                             <div className='rollingSSunder'>
                                 {siteText[0].potitle}
-                                <div style={{ position: 'absolute', right: 30, bottom: 15, fontSize: '2rem'}}>
+                                <div style={{ position: 'absolute', right: 30, bottom: 15, fontSize: '2rem', color:'#FFFFFF'}}>
                                     {isVisible && <CountUp end={countEndPercent} duration={4} suffix='%'/>}
                                 </div>
                             </div>
